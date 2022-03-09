@@ -170,7 +170,6 @@ header .flex-item {
   /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/
   color: white;
   padding: 8px;
-  margin: 20 auto;
   margin-top: 100px;
   font-size: 35px;
   border-radius: 10px;
@@ -572,6 +571,10 @@ footer a {
 /* --------------------------- Media Queries --------------------------- */
 
 @media screen and (max-width: 1000px) {
+  .HeaderWrap h2 {
+    margin-top: 20px;
+  }
+
   .HeaderWrap .BackgroundImage {
     width: 31.5vw;
     height: 31.5vw;
@@ -621,7 +624,7 @@ footer a {
   }
 
   .Educacao section:last-child {
-    margin-bottom: 220px;
+    margin-bottom: 120px;
   }
 }
 
@@ -641,11 +644,11 @@ footer a {
 
 @media screen and (max-width: 750px) {
   .Tabela1 {
-    width: fit-content;
+    width: auto;
   }
 
   .Tabela2 {
-    width: fit-content;
+    width: auto;
   }
 }
 
@@ -687,6 +690,36 @@ footer a {
     width: 33.5vw;
     height: 33.5vw;
   }
+
+  .Tecnologias .MainWrap h2 {
+    font-size: 30px;
+    padding: 2px;
+    padding-left: 1px;
+    padding-right: 5px;
+ }
+
+.Tabela1 td, .Tabela1 th, .Tabela2 td, .Tabela2 th {
+   font-size: 15px;
+ }
+
+  .HeaderWrap section {
+    width: fit-content;
+  }
+
+  .HeaderWrap section p {
+    font-size: 15px;
+  }
+
+  .HeaderWrap section p span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .Tabela1 td, .Tabela1 th, .Tabela2 td, .Tabela2 th {
+    font-size: 13px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 300px) {
@@ -700,9 +733,7 @@ footer a {
   .HeaderWrap, .MainWrap  {
     width: fit-content;
     margin: 0 auto;
-  }
-
-  .Tabela2 {
-    width: fit-content;
+    margin-left: 1px;
+    margin-right: 1px;
   }
 }
