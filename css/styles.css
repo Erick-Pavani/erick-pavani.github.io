@@ -602,6 +602,22 @@ footer a {
     bottom: 0;
     left: 0;
     right: 0;
+    height: min-content;
+  }
+
+  .FooterWrap h2 {
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .FooterWrap a {
+    height: 35px;
+    margin: 0;
+  }
+
+  .FooterWrap a img {
+    height: 25px;
   }
 
   .Educacao section:last-child {
@@ -622,6 +638,17 @@ footer a {
     height: 32vw;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .Tabela1 {
+    width: fit-content;
+  }
+
+  .Tabela2 {
+    width: fit-content;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .HeaderWrap .BackgroundImage {
