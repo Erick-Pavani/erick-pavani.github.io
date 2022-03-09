@@ -1,0 +1,681 @@
+/* --------- Global ------------ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#SobreMim {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+#Tecnologias {
+  margin-bottom: 70px;
+}
+
+#Projetos {
+  margin-bottom: 100px;
+}
+
+#Educacao {
+  margin-bottom: 90px;
+}
+
+/* --------- Header ------------ */
+
+.Menu {
+  background: linear-gradient(to right, #c90d0d, #c5b82b, #3ec83c, #007bff, #224ce0, #ab2e5a, #d01f61, #e02929);
+  text-align: center;
+  margin: 0 auto;
+  font-size: 250%;
+  height:60px;
+  color: white;
+  border: solid white;
+  font-family: 'Berkshire Swash', cursive;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 99,9vw;
+  justify-content: center;
+  align-items: center;
+}
+
+header .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+header .flex-item {
+  flex: 1 1 auto;
+}
+
+.Menu a {
+  display: inline-block;
+  color: white;
+  margin-top: 0;
+  border-right: solid white 3.5px;
+}
+
+.Menu a:last-child {
+  border-right: none;
+}
+
+.HeaderWrap {
+  width: 73%;
+  margin: 0 1%;
+  padding: 0;
+  text-align: center;
+}
+
+.HeaderWrap span {
+  display: inline-block;
+}
+
+.HeaderWrap .BackgroundImage {
+  width: 31vw;
+  height: 31vw;
+  background: linear-gradient(to right, #e20707, #d4c706);
+  /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/border-radius: 50%;
+  padding: 3px;
+  margin-bottom: 30px;
+  padding-top: 5px;
+}
+
+.HeaderWrap .BackgroundImage .HeaderBackgroundImage {
+  background: black;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.HeaderWrap img {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.HeaderWrap section p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  border-width: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 50px;
+  font-size: 25px;
+  padding-bottom: 22px;
+}
+
+.HeaderWrap section p span {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.HeaderWrap, .FooterWrap {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.HeaderWrap * { 
+  background: #e20707; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e20707, #d4c706); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e20707, #d4c706); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+}
+
+.HeaderWrap h2 {  
+  font-family: Dancing Script;
+  font-style: italic;
+  font-weight: bold;
+  background: white; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e20707, #d4c706); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e20707, #d4c706); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/
+  color: white;
+  padding: 8px;
+  margin: 20 auto;
+  margin-top: 100px;
+  font-size: 35px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.HeaderWrap section {
+  background: linear-gradient(to right, #e20707, #d4c706); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 12px;
+  padding: 3px;
+  display: inline-block;
+}
+
+.HeaderWrap section .HeaderTextBackground {
+  background: black;
+  border-radius: 12px;
+  margin: 0px;
+  padding: 2px;
+  padding-bottom: 0;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+/* --------- Main Wraper ------------ */
+
+.MainWrap {
+  width: 73%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* --------- Section Tecnologias ------------ */
+
+.Tecnologias {
+  margin-top: 80px;
+  /* margin-bottom: 80px; */
+}
+
+.Tecnologias h2 {
+  background: linear-gradient(to right, #3ec83c 0%, #007bff 80%);
+  /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 8px;
+  margin: 20 auto;
+  font-size: 30px;
+  font-family: 'Sansita Swashed', cursive;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* --------- Table ------------ */
+
+table {
+  padding: 0 auto;
+  width: 73vw;
+  margin: 10px auto;
+  margin-top: 80px;
+  background-image:linear-gradient(to right, #3ec83c, #007bff);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+th {
+  background: transparent;  
+  color: white;
+  width: 15%;
+  height: 5vw;
+  font-size: 30px;
+  font-style: italic;
+  border-radius: 10px;
+  padding: 10px auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+td {
+  background: black;
+  height: 5vw;
+  width: 5%;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+td * {
+  background: #224ce0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #224ce0, #ab2e5a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding: 2px;
+}
+
+th a {
+  color: white;
+}
+
+.TableNotFull {
+  display: none;
+  font-size: 15px;
+  margin: 0;
+  height: 75%;
+  padding: 0;
+}
+
+.TableNotFull td, .TableNotFull th {
+  padding: 2px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.Tabela1 {
+  margin-bottom: 45px;
+}
+
+.Tabela2 {
+  margin: 0;
+}
+
+/* --------- Table Hovers ------------ */
+
+td:hover {
+  background-color: white;
+}
+
+th:hover {
+  background-color: gold;
+}
+
+/* -------- Section Projetos ---------- */
+
+.Projetos * {    
+  background: #224ce0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #224ce0, #ab2e5a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #224ce0, #ab2e5a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Projetos h3{
+  background: #224ce0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #224ce0, #ab2e5a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #224ce0, #ab2e5a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Projetos h2 {
+  background: linear-gradient(to right, #224ce0, #ab2e5a);
+  /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 8px;
+  margin: 20 auto;
+  font-size: 30px;
+  border-radius: 10px;
+  font-family: 'Sansita Swashed', cursive;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.Projetos a {
+  background: #224ce0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #224ce0, #ab2e5a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #224ce0, #ab2e5a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  color: black;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 30px 5px;
+  font-weight: bold;
+}
+
+/* -------- Section Educação ---------- */
+
+.Educacao p, .Educacao h3 {
+  background: #f7005c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7005c, #d74102);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Educacao h2 {
+  background: linear-gradient(to right, #f7005c, #d74102);
+  /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 8px;
+  margin: 20 auto;
+  font-size: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  font-family: 'Sansita Swashed', cursive;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.Educacao a {
+  background: #f7005c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7005c, #d74102);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f7005c, #d74102); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 22px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.Educacao h3 {
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.Educacao p {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.Educacao section {
+  margin: 25px;
+}
+
+.Educacao .Cursos a {
+  min-width: 20vw;
+}
+
+.Educacao .MainWrap section {
+  background: linear-gradient(to right, #f7005c, #d74102);
+  /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 3px;
+  margin-bottom: 40px;
+}
+
+.Educacao .MainWrap section .GradientBackground {
+  background: black;
+  border-radius: 12px;
+  margin: 0px;
+  padding: 2px;
+  padding-bottom: 0;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+/* -------- Educação Hovers ---------- */
+
+.Educacao a:hover {
+  background: grey;
+}
+
+/* -------- Footer ---------- */
+
+footer {
+  padding: 0px;
+  margin: 0 auto ;
+  border: solid;
+  border-color: #1c1b1b;
+  border-width: 1px;
+  background: #191919;
+}
+
+footer a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.FooterWrap {
+  width: 99,9vw;
+  margin: 0;
+  margin-bottom: 0;
+  margin-top: 80px;
+  padding: auto;
+}
+
+.FooterWrap h2 {  
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045 40%, #fd1d1d 50%, #833ab4 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 20px auto;
+  font-size: 30px;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.LinkGradient1 {
+  background: -webkit-linear-gradient(      45deg,      rgba(255, 0, 0, 1)33%,      rgba(255, 154, 0, 1) 66%,      rgba(208, 222, 33, 1) 100%  );
+  padding: 8px;
+  border-radius: 10px;
+  margin: 5px;
+  width: 25%;
+  margin-bottom: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.LinkGradient2 {
+  background: -webkit-linear-gradient(      45deg,      rgba(79, 220, 74, 1) 25%,      rgba(63, 218, 216, 1) 50%,      rgba(47, 201, 226, 1) 75%,      rgba(28, 127, 238, 1) 100%  );
+  padding: 8px;
+  border-radius: 10px;
+  margin: 5px;
+  width: 25%;
+  margin-bottom: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.LinkGradient3 {
+  background: -webkit-linear-gradient(      45deg,      rgba(28, 127, 238, 1) 25%,      rgba(95, 21, 242, 1) 50%,      rgba(186, 12, 248, 1) 75%,      rgba(251, 7, 217, 1) 100%  );
+  padding: 8px;
+  border-radius: 10px;
+  margin: 5px;
+  width: 25%;
+  color: black;
+  margin-bottom: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.FooterWrap img {
+  height: 40px;
+}
+
+/* -------- Footer Hovers ---------- */
+
+.FooterWrap a:hover {
+  background: grey;
+}
+
+/* --------------------------- Scroll Bar --------------------------- */
+
+::-webkit-scrollbar {
+  height: 12px;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #393812;
+  background: linear-gradient(to top, #c90d0d, #c5b82b, #3ec83c, #007bff, #224ce0, #ab2e5a, #d01f61, #e02929);
+  box-shadow: black;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+  height: 250px;
+  border: solid white 0.5px;
+}
+
+::-webkit-scrollbar-track {
+  border: solid white;
+  border-width: 0.7px;
+}
+
+/* --------------------------- Media Queries --------------------------- */
+
+@media screen and (max-width: 1000px) {
+  .HeaderWrap .BackgroundImage {
+    width: 31.5vw;
+    height: 31.5vw;
+  }
+
+  .HeaderWrap h2 {
+    font-family: 'Sansita Swashed', cursive;
+  }
+
+  header .Menu {
+    display: none;
+  }
+
+  .TableFull {
+    display: none;
+  }
+
+  .TableNotFull {
+    display: block;
+  }
+
+  .HeaderWrap .HeaderTextBackground p {
+    padding-top: 10px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .Educacao section:last-child {
+    margin-bottom: 220px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .HeaderWrap .BackgroundImage {
+    width: 31.7vw;
+    height: 31.7vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .HeaderWrap .BackgroundImage {
+    width: 32vw;
+    height: 32vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .HeaderWrap .BackgroundImage {
+    width: 32.5vw;
+    height: 32.5vw;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .Educacao .Cursos a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Educacao a {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .HeaderWrap .BackgroundImage {
+    width: 33vw;
+    height: 33vw;
+  }
+
+  .HeaderWrap h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .HeaderWrap .BackgroundImage {
+    width: 33.5vw;
+    height: 33.5vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .HeaderWrap .BackgroundImage {
+    width: 34vw;
+    height: 34vw;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .HeaderWrap, .MainWrap  {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .Tabela2 {
+    width: fit-content;
+  }
+}
