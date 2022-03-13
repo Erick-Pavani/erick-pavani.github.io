@@ -412,7 +412,7 @@ th:hover {
 }
 
 .Educacao h3 {
-  font-size: 25px;
+  font-size: 200%;
   margin-top: 15px;
 }
 
@@ -712,6 +712,10 @@ footer a {
 
   .HeaderWrap section p span {
     font-size: 18px;
+  }
+
+  .Educacao h3 {
+    font-size: 150%;
   }
 }
 
