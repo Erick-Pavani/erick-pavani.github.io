@@ -233,9 +233,11 @@ header .flex-item {
 /* --------- Table ------------ */
 
 table {
-  padding: 0 auto;
+  padding: 0 0;
+  max-width: 100%;
   width: 73vw;
   margin: 10px auto;
+  border-spacing: 0.3rem;
   margin-top: 80px;
   background-image:linear-gradient(to right, #3ec83c, #007bff);
   border-radius: 10px;
@@ -658,6 +660,14 @@ footer a {
     width: 32.5vw;
     height: 32.5vw;
   }
+
+  .Tabela1 {
+    border-spacing: 1px;
+  }
+
+  .Tabela2 {
+    border-spacing: 1px;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -696,11 +706,11 @@ footer a {
     padding: 2px;
     padding-left: 1px;
     padding-right: 5px;
- }
+  }
 
-.Tabela1 td, .Tabela1 th, .Tabela2 td, .Tabela2 th {
+  .Tabela1 td, .Tabela1 th, .Tabela2 td, .Tabela2 th {
    font-size: 15px;
- }
+  }
 
   .HeaderWrap section {
     width: fit-content;
@@ -722,7 +732,7 @@ footer a {
 @media screen and (max-width: 315px) {
   .Tabela1 td, .Tabela1 th, .Tabela2 td, .Tabela2 th {
     font-size: 13px;
-    height: auto;
+    height: 5%;
   }
 }
 
