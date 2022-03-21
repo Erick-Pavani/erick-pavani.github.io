@@ -233,7 +233,7 @@ header .flex-item {
 /* --------- Table ------------ */
 
 table {
-  padding: 0 0;
+  padding: 0;
   max-width: 100%;
   width: 73vw;
   margin: 10px auto;
@@ -468,9 +468,7 @@ th:hover {
 footer {
   padding: 0px;
   margin: 0 auto ;
-  border: solid;
-  border-color: #1c1b1b;
-  border-width: 1px;
+  border: 1px solid #1c1b1b;
   background: #191919;
 }
 
