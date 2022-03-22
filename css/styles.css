@@ -484,3 +484,17 @@ footer h2 {
         width: 18px;
     }
 }
+
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    * {
+        opacity:1 !important;
+    }
+}
+
+@supports not (-webkit-touch-callout: none) {
+    /* CSS for other than iOS devices */ 
+    * {
+        opacity:1 !important;
+    }
+}
