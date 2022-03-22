@@ -3,7 +3,7 @@ a:hover {
     color: gold!important;
 }
 
-#Tecnologias .card:hover {
+.Tecnologias .card:hover {
     background: white!important;
     color: gold!important;
 }
@@ -91,18 +91,18 @@ a:hover {
     color: transparent;
 }
 
-#Educacao h3 {
+.Educacao h3 {
     font-size: 200%;
     margin-top: 15px;
     font-weight: bold;
 }
 
-#Educacao p {
+.Educacao p {
     font-size: 20px;
     margin-bottom: 30px;
 }
 
-#Educacao a {
+.Educacao a {
     text-decoration: none;
     background: #f7005c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f7005c, #d74102);  /* Chrome 10-25, Safari 5.1-6 */
@@ -116,17 +116,17 @@ a:hover {
     font-weight: bold;
 }
 
-#Educacao a:hover {
+.Educacao a:hover {
     background: grey;
     color: gold!important;
 }
 
-#Educacao .Curso {
+.Educacao .Curso {
     margin-top: 0!important;
     margin-bottom: 80px;
 }
 
-#Projetos .carousel-item .container *{
+.Projetos .carousel-item .container *{
     background:linear-gradient(to right, #224ce0, #ab2e5a)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text!important;
     background-clip: text!important;
@@ -136,15 +136,15 @@ a:hover {
     -webkit-text-stroke: 0.5px white;
 }
 
-#Projetos .carousel-item .container h1 {
+.Projetos .carousel-item .container h1 {
     font-size: 50px!important;
 }
 
-#Projetos .carousel-item .container p {
+.Projetos .carousel-item .container p {
     font-size: 35px!important;
 }
 
-#Educacao .card-body h3, #Educacao .card-body p {
+.Educacao .card-body h3, .Educacao .card-body p {
     background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     background-clip: text;
@@ -235,7 +235,7 @@ footer h2 {
 }
 
 @media screen and (min-width: 380px) {
-    #Educacao a {
+    .Educacao a {
         margin-left: 25px;
         margin-right: 25px;
     }
@@ -263,11 +263,11 @@ footer h2 {
 }
 
 @media screen and (max-width: 803px) {
-    #Projetos .carousel-item .container h1 {
+    .Projetos .carousel-item .container h1 {
         font-size: 40px!important;
     }
     
-    #Projetos .carousel-item .container p {
+    .Projetos .carousel-item .container p {
         font-size: 30px!important;
     }
 
@@ -322,15 +322,15 @@ footer h2 {
 }
 
 @media screen and (max-width: 450px) {
-    #Projetos .carousel-item .container *{
+    .Projetos .carousel-item .container *{
         -webkit-text-stroke: 0.3px white;
     }
     
-    #Projetos .carousel-item .container h1 {
+    .Projetos .carousel-item .container h1 {
         font-size: 35px!important;
     }
     
-    #Projetos .carousel-item .container p {
+    .Projetos .carousel-item .container p {
         font-size: 20px!important;
     }
 }
@@ -360,7 +360,7 @@ footer h2 {
         font-size: 25px;
     }
 
-    #Educacao h3 {
+    .Educacao h3 {
         font-size: 25px;
     }
 }
@@ -386,17 +386,17 @@ footer h2 {
 }
 
 @media screen and (max-width: 400px) {
-    #Educacao h3 {
+    .Educacao h3 {
         font-size: 170%;
     }
 }
 
 @media screen and (max-width: 365px) {
-    #Projetos .carousel-item .container h1 {
+    .Projetos .carousel-item .container h1 {
         font-size: 30px!important;
     }
     
-    #Projetos .carousel-item .container p {
+    .Projetos .carousel-item .container p {
         font-size: 20px!important;
     }
 }
@@ -426,19 +426,21 @@ footer h2 {
 }
 
 @media screen and (max-width: 341px) {
-    #Projetos .carousel-item .container h1 {
+    .Projetos .carousel-item .container h1 {
         font-size: 28px!important;
     }
     
-    #Projetos .carousel-item .container p {
+    .Projetos .carousel-item .container p {
         font-size: 20px!important;
     }
+}
 
-    #Educacao a {
+@media screen and (max-width: 315px) {
+    .Educacao a {
         padding: 5px!important;
         font-size: 18px;
     }
-}
+} 
 
 @media  screen and (max-width: 300px) {
     .Email, .Github, .Linkedin {
