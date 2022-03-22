@@ -99,7 +99,7 @@ a:hover {
     font-weight: bold;
 }
 
-.Educacao p {
+#Educacao p {
     font-size: 20px;
     margin-bottom: 30px;
 }
@@ -113,8 +113,6 @@ a:hover {
     padding: 10px;
     border-radius: 8px;
     font-size: 22px;
-    margin-right: 25px;
-    margin-left: 25px;
     margin-bottom: 25px;
     display: inline-block;
     font-weight: bold;
@@ -228,6 +226,13 @@ footer h2 {
 @media screen and (min-width: 1200px) {
     #NavBar a {
         border-left: 1px solid white;
+    }
+}
+
+@media screen and (min-width: 380px) {
+    #Educacao a {
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }
 
@@ -349,6 +354,10 @@ footer h2 {
     #Contato h2 {
         font-size: 25px;
     }
+
+    #Educacao h3 {
+        font-size: 25px;
+    }
 }
 
 @media  screen and (max-width: 410px) {
@@ -418,6 +427,11 @@ footer h2 {
     
     #Projetos .carousel-item .container p {
         font-size: 20px!important;
+    }
+
+    #Educacao a {
+        padding: 5px!important;
+        font-size: 18px;
     }
 }
 
