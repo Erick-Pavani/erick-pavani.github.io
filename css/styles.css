@@ -51,7 +51,7 @@ a:hover {
     background: rgba(151, 145, 145, 70%);
 }
 
-.HeaderWrapText {
+#SobreMim .HeaderWrapText h4, #SobreMim .HeaderWrapText p{
     background: #e20707; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #e20707, #d4c706); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #e20707, #d4c706); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -490,16 +490,3 @@ footer h2 {
     }
 }
 
-@supports (-webkit-touch-callout: none) {
-    /* CSS specific to iOS devices */ 
-    #Educacao card-body * {
-        opacity:1 !important;
-    }
-}
-
-@supports not (-webkit-touch-callout: none) {
-    /* CSS for other than iOS devices */ 
-    * {
-        opacity:1 !important;
-    }
-}
