@@ -1,20 +1,25 @@
+/* ---------------------------- Globais --------------------------------- */
+
 a:hover {
     background: rgba(151, 145, 145, 50%);
     color: gold!important;
 }
 
-#Tecnologias .card:hover {
-    background: white!important;
-}
-
-.TecTitles:hover *, .TecTitles:hover {
-    background: rgba(151, 145, 145, 100%)!important;
-    color: gold!important;
-}
+/* ---------------------------- Navbar/Header --------------------------------- */
 
 #NavBar {
     border: 2px solid white!important;
 }
+
+.navbar-toggler {
+    box-shadow: none!important;
+}
+
+.navbar-toggler:hover {
+    background: rgba(151, 145, 145, 70%);
+}
+
+/* ---------------------------- Sobre Mim --------------------------------- */
 
 .ProfileImage {
     position: relative;
@@ -40,14 +45,6 @@ a:hover {
     background-size: cover;
     border-radius: 50%;
     overflow: hidden;
-}
-
-.navbar-toggler {
-    box-shadow: none!important;
-}
-
-.navbar-toggler:hover {
-    background: rgba(151, 145, 145, 70%);
 }
 
 #SobreMim .HeaderWrapText h4, #SobreMim .HeaderWrapText p{
@@ -83,12 +80,45 @@ a:hover {
     -o-border-radius: 12px;
 }
 
+/* ---------------------------- Tecnologias --------------------------------- */
+
+#Tecnologias .card:hover {
+    background: white!important;
+}
+
+.TecTitles:hover *, .TecTitles:hover {
+    background: rgba(151, 145, 145, 100%)!important;
+    color: gold!important;
+}
+
 .Icon::before {
     background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
+
+/* ---------------------------- Projetos --------------------------------- */
+
+#Projetos .carousel-item .container *{
+    background:linear-gradient(to right, #224ce0, #ab2e5a)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text!important;
+    background-clip: text!important;
+    color: transparent!important;
+    font-weight: bold!important;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px white;
+}
+
+#Projetos .carousel-item .container h1 {
+    font-size: 50px!important;
+}
+
+#Projetos .carousel-item .container p {
+    font-size: 35px!important;
+}
+
+/* ---------------------------- Educacao --------------------------------- */
 
 #Educacao h3 {
     font-size: 200%;
@@ -125,30 +155,14 @@ a:hover {
     margin-bottom: 80px;
 }
 
-#Projetos .carousel-item .container *{
-    background:linear-gradient(to right, #224ce0, #ab2e5a)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text!important;
-    background-clip: text!important;
-    color: transparent!important;
-    font-weight: bold!important;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px white;
-}
-
-#Projetos .carousel-item .container h1 {
-    font-size: 50px!important;
-}
-
-#Projetos .carousel-item .container p {
-    font-size: 35px!important;
-}
-
 #Educacao .card-body h3, #Educacao .card-body p {
     background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
+
+/* ---------------------------- Contato/Footer --------------------------------- */
 
 footer {
     padding: 0px;
@@ -208,6 +222,8 @@ footer h2 {
     -o-border-radius: 10px;
 }
 
+/* ---------------------------- Scroll Bar --------------------------------- */
+
 ::-webkit-scrollbar {
     height: 12px;
     background: #000;
@@ -227,6 +243,10 @@ footer h2 {
     border-width: 0.7px;
 }
 
+/* ---------------------------- Media Queries --------------------------------- */
+
+        /* ----------------------- Min Media Queries ------------------------- */
+
 @media screen and (min-width: 1200px) {
     #NavBar a {
         border-left: 1px solid white;
@@ -239,6 +259,8 @@ footer h2 {
         margin-right: 25px;
     }
 }
+
+        /* ----------------------- Max Media Queries ------------------------ */
 
 @media screen and (max-width: 1199px) {
     .navbar-text {
