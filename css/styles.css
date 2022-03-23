@@ -5,10 +5,9 @@ a:hover {
 
 #Tecnologias .card:hover {
     background: white!important;
-    color: gold!important;
 }
 
-.TecTitles:hover , .TecTitles h1:hover {
+.TecTitles:hover *, .TecTitles:hover {
     background: rgba(151, 145, 145, 100%)!important;
     color: gold!important;
 }
