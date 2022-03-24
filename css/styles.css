@@ -279,11 +279,13 @@ footer h2 {
         margin-top: 100px!important;
     }
 }
+
 @media screen and (max-width: 1238px) {
     #NavBar a, .navbar-text {
         font-size: 30px;
     }
 }
+
 @media  screen and (max-width: 1000px) {
     .SobreMim h1 {
         font-family: 'Berkshire Swash', cursive!important;
