@@ -1,5 +1,9 @@
 /* ---------------------------- Globais --------------------------------- */
 
+body {
+    background: black!important;
+}
+
 a:hover {
     background: rgba(151, 145, 145, 50%);
     color: gold!important;
