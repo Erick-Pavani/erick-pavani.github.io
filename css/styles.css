@@ -5,6 +5,10 @@ a:hover {
     color: gold!important;
 }
 
+.H1-SobreMim, .HeaderWrapContainer, .H1-Tecnologias, .Tecnologia-Cards, .H1-Projetos, .Carrosel, .H1-Educacao, .Educacao-Cards {
+    width: 75%!important;
+}
+
 /* ---------------------------- Navbar/Header --------------------------------- */
 
 #NavBar {
@@ -329,8 +333,6 @@ footer h2 {
 }
 
 @media  screen and (max-width: 500px) {
-    
-
     .ProfileImage {
         width: 270px;
         height: 270px;
@@ -339,6 +341,10 @@ footer h2 {
     .ProfileImage:after {
         width: 260px;
         height: 260px;
+    }
+
+    .H1-SobreMim, .HeaderWrapContainer, .H1-Tecnologias, .H1-Projetos, .Carrosel, .H1-Educacao, .Educacao-Cards {
+        width: 80%!important;
     }
 }
 
