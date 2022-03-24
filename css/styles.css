@@ -420,7 +420,14 @@ footer h2 {
 
 @media screen and (max-width: 400px) {
     #Educacao h3 {
-        font-size: 170%;
+        font-size: 150%!important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #Educacao a {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
@@ -498,6 +505,13 @@ footer h2 {
 
     .Flask {
         font-size: 100px!important;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    #Educacao a {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
