@@ -286,7 +286,7 @@ footer h2 {
     }
 }
 
-@media  screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .SobreMim h1 {
         font-family: 'Berkshire Swash', cursive!important;
         font-size: 25px;
@@ -307,7 +307,7 @@ footer h2 {
     }
 }
 
-@media  screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .ProfileImage {
         width: 350px;
         height: 350px;
@@ -319,11 +319,11 @@ footer h2 {
     }
 
     .H1-SobreMim, .HeaderWrapContainer, .H1-Tecnologias, .H1-Projetos, .Carrosel, .H1-Educacao, .Educacao-Cards {
-        width: 80%!important;
+        width: 85%!important;
     }
 }
 
-@media  screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .ProfileImage {
         width: 320px;
         height: 320px;
@@ -335,14 +335,14 @@ footer h2 {
     }
 }
 
-@media  screen and (max-width: 530px) {
+@media screen and (max-width: 530px) {
     .navbar-text {
         font-size: 30px!important;
         margin: 0;
     }
 }
 
-@media  screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .ProfileImage {
         width: 270px;
         height: 270px;
@@ -368,7 +368,7 @@ footer h2 {
     }
 }
 
-@media  screen and (max-width: 442px) {
+@media screen and (max-width: 442px) {
     .navbar-text{
         font-size: 25px!important;
     }
@@ -378,7 +378,7 @@ footer h2 {
     }
 }
 
-@media  screen and (max-width: 430px) {
+@media screen and (max-width: 430px) {
     .ProfileImage {
         width: 240px;
         height: 240px;
@@ -398,7 +398,7 @@ footer h2 {
     }
 }
 
-@media  screen and (max-width: 410px) {
+@media screen and (max-width: 410px) {
     .navbar-brand img {
         width: 40px!important;
     }
@@ -434,7 +434,7 @@ footer h2 {
     }
 }
 
-@media  screen and (max-width: 354px) {
+@media screen and (max-width: 354px) {
     .navbar-brand img {
         width: 30px!important;
     }
@@ -475,13 +475,13 @@ footer h2 {
     }
 } 
 
-@media  screen and (max-width: 300px) {
+@media screen and (max-width: 300px) {
     .Email, .Github, .Linkedin {
         width: 67px!important;
     }
 }
 
-@media  screen and (max-width: 297px) {
+@media screen and (max-width: 297px) {
     .navbar-text{
         font-size: 15px!important;
     }
@@ -491,7 +491,7 @@ footer h2 {
     }
 }
 
-@media  screen and (max-width: 290px) {
+@media screen and (max-width: 290px) {
     .Django {
         font-size: 100px!important;
     }
@@ -501,7 +501,7 @@ footer h2 {
     }
 }
 
-@media  screen and (max-width: 249px) {
+@media screen and (max-width: 249px) {
     .navbar-text{
         font-size: 12px!important;
     }
