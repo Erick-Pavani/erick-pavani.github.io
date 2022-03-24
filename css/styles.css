@@ -315,6 +315,10 @@ footer h2 {
         width: 340px;
         height: 340px;
     }
+
+    .H1-SobreMim, .HeaderWrapContainer, .H1-Tecnologias, .H1-Projetos, .Carrosel, .H1-Educacao, .Educacao-Cards {
+        width: 80%!important;
+    }
 }
 
 @media  screen and (max-width: 600px) {
@@ -345,10 +349,6 @@ footer h2 {
     .ProfileImage:after {
         width: 260px;
         height: 260px;
-    }
-
-    .H1-SobreMim, .HeaderWrapContainer, .H1-Tecnologias, .H1-Projetos, .Carrosel, .H1-Educacao, .Educacao-Cards {
-        width: 80%!important;
     }
 }
 
@@ -392,7 +392,7 @@ footer h2 {
     }
 
     #Educacao h3 {
-        font-size: 25px;
+        font-size: 28px!important;
     }
 }
 
