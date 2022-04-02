@@ -195,7 +195,7 @@ footer h2 {
 }
 
 .Email {
-    background: -webkit-linear-gradient(      45deg,      rgba(255, 0, 0, 1)33%,      rgba(255, 154, 0, 1) 66%,      rgba(208, 222, 33, 1) 100%  );
+    background: -webkit-linear-gradient(      45deg,      rgba(255, 0, 0, 1) 33%,      rgba(255, 154, 0, 1) 66%,      rgba(208, 222, 33, 1) 100%  );
     padding: 8px;
     border-radius: 10px;
     margin: 5px;
@@ -258,6 +258,12 @@ footer h2 {
 @media screen and (min-width: 1200px) {
     #NavBar a {
         border-left: 1px solid white;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    #Educacao a {
+        min-width: 140px;
     }
 }
 
