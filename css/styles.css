@@ -261,16 +261,22 @@ footer h2 {
     }
 }
 
-@media screen and (min-width: 450px) {
-    #Educacao a {
-        min-width: 140px;
-    }
-}
-
 @media screen and (min-width: 380px) {
     #Educacao a {
         margin-left: 25px;
         margin-right: 25px;
+    }
+}
+
+@media screen and (min-width: 316px) {
+    #Educacao a {
+        min-width: 140px!important;
+    }
+}
+
+@media screen and (min-width: 1px) {
+    #Educacao a {
+        min-width: 105px;
     }
 }
 
