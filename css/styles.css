@@ -9,7 +9,7 @@ a:hover {
     color: gold!important;
 }
 
-.H1-SobreMim, .HeaderWrapContainer, .H1-Tecnologias, .Tecnologia-Cards, .H1-Projetos, .Carrosel, .H1-Educacao, .Educacao-Cards {
+.H1-SobreMim, .HeaderWrapContainer, .H1-Tecnologias, .Tecnologia-Cards, .H1-Projetos, .ProjectsWrapContainer, .Carrosel, .H1-Educacao, .Educacao-Cards {
     width: 75%!important;
 }
 
@@ -127,6 +127,60 @@ a:hover {
 }
 
 /* ---------------------------- Projetos --------------------------------- */
+
+
+#Projetos .ProjectsWrapBorder {
+    background: black;
+    border-radius: 12px;
+    margin: 0px;
+    padding: 2px;
+    padding-bottom: 0;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+#Projetos .ProjectsWrapContainer {
+    background: linear-gradient(to right, #224ce0, #ab2e5a);
+    /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/border-radius: 12px;
+    padding: 3px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+#Projetos .ProjectsWrapText h4, #Projetos .ProjectsWrapText p{
+    background: #224ce0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #224ce0, #ab2e5a); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #224ce0, #ab2e5a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    text-align: center;
+}
+
+#Projetos .botao {
+    text-decoration: none;
+    background: #224ce0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #224ce0, #ab2e5a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #224ce0, #ab2e5a); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+#Projetos .botao:hover {
+    background: grey;
+    color: gold!important;
+}
 
 #Projetos .carousel-item .container *{
     background:linear-gradient(to right, #224ce0, #ab2e5a)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -350,7 +404,7 @@ footer h2 {
         height: 340px;
     }
 
-    .H1-SobreMim, .HeaderWrapContainer, .H1-Tecnologias, .H1-Projetos, .Carrosel, .H1-Educacao, .Educacao-Cards {
+    .H1-SobreMim, .HeaderWrapContainer, .ProjectsWrapContainer, .H1-Tecnologias, .H1-Projetos, .Carrosel, .H1-Educacao, .Educacao-Cards {
         width: 85%!important;
     }
 }
