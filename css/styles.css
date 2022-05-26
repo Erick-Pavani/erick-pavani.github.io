@@ -88,6 +88,26 @@ a:hover {
     -o-border-radius: 12px;
 }
 
+#SobreMim a {
+    text-decoration: none;
+    background: #e20707;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e20707, #d4c706);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e20707, #d4c706); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+#SobreMim a:hover {
+    background: grey;
+    color: gold!important;
+}
+
 /* ---------------------------- Tecnologias --------------------------------- */
 
 #Tecnologias .card:hover {
