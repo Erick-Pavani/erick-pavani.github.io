@@ -516,15 +516,28 @@ footer h2 {
         margin-left: 15px;
         margin-right: 15px;
     }
+    
+    #Projetos .carousel-item .container *{
+        -webkit-text-stroke: 0.5px white;
+    }
+    
+    #Projetos .carousel-item .container h1 {
+        font-size: 33.5px!important;
+    }
+    
+    #Projetos .carousel-item .container p {
+        font-size: 25px!important;
+    }
+
 }
 
 @media screen and (max-width: 365px) {
     #Projetos .carousel-item .container h1 {
-        font-size: 33px!important;
+        font-size: 32px!important;
     }
     
     #Projetos .carousel-item .container p {
-        font-size: 26px!important;
+        font-size: 23px!important;
     }
 }
 
@@ -562,7 +575,7 @@ footer h2 {
     }
 
     #Projetos .carousel-item .container *{
-        -webkit-text-stroke: 0.25px white;
+        -webkit-text-stroke: 0.35px white;
     }
 }
 
