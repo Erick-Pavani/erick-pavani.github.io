@@ -151,7 +151,7 @@ a:hover {
     -o-border-radius: 12px;
 }
 
-#Projetos .ProjectsWrapText h4, #Projetos .ProjectsWrapText p{
+#Projetos .ProjectsWrapText h4, #Projetos .ProjectsWrapText p {
     background: #224ce0; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #224ce0, #ab2e5a); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #224ce0, #ab2e5a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -182,7 +182,7 @@ a:hover {
     color: gold!important;
 }
 
-#Projetos .carousel-item .container *{
+#Projetos .carousel-item .container * {
     background:linear-gradient(to right, #224ce0, #ab2e5a)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text!important;
     background-clip: text!important;
@@ -199,6 +199,7 @@ a:hover {
 #Projetos .carousel-item .container p {
     font-size: 35px!important;
 }
+
 
 /* ---------------------------- Educacao --------------------------------- */
 
@@ -442,7 +443,7 @@ footer h2 {
 
 @media screen and (max-width: 450px) {
     #Projetos .carousel-item .container *{
-        -webkit-text-stroke: 0.3px white;
+        -webkit-text-stroke: 0.5px white;
     }
     
     #Projetos .carousel-item .container h1 {
@@ -450,7 +451,7 @@ footer h2 {
     }
     
     #Projetos .carousel-item .container p {
-        font-size: 20px!important;
+        font-size: 27px!important;
     }
 }
 
@@ -519,11 +520,11 @@ footer h2 {
 
 @media screen and (max-width: 365px) {
     #Projetos .carousel-item .container h1 {
-        font-size: 30px!important;
+        font-size: 33px!important;
     }
     
     #Projetos .carousel-item .container p {
-        font-size: 20px!important;
+        font-size: 26px!important;
     }
 }
 
@@ -553,11 +554,15 @@ footer h2 {
 
 @media screen and (max-width: 341px) {
     #Projetos .carousel-item .container h1 {
-        font-size: 28px!important;
+        font-size: 30px!important;
     }
     
     #Projetos .carousel-item .container p {
-        font-size: 20px!important;
+        font-size: 21.5px!important;
+    }
+
+    #Projetos .carousel-item .container *{
+        -webkit-text-stroke: 0.25px white;
     }
 }
 
@@ -571,6 +576,14 @@ footer h2 {
 @media screen and (max-width: 300px) {
     .Email, .Github, .Linkedin {
         width: 67px!important;
+    }
+
+    #Projetos .carousel-item .container h1 {
+        font-size: 30px!important;
+    }
+    
+    #Projetos .carousel-item .container p {
+        font-size: 21px!important;
     }
 }
 
