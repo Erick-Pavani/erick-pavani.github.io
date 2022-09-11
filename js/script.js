@@ -36,5 +36,5 @@ var typed = new Typed(".typing", {
 })
 
 window.addEventListener("resize", function () {
-    this.location.reload();
+    this.location.reload(true);
 }) 
