@@ -1,5 +1,8 @@
 window.onload = function() { 
     document.getElementById("loading").style.display = "none";
+    setTimeout(() => {
+        history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+    }, 5);
 }
 
 const mobile = document.getElementById('menu');
@@ -16,8 +19,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
-window.addEventListener("scroll", () => 
-{
+window.addEventListener("scroll", () => {
     if (mobile.classList.contains("on"))
     {
         setMenu(mobile);    
