@@ -1,0 +1,278 @@
+:root {
+    --gradient-1: #009FFF;
+    --gradient-2: #ec2F4B;
+    --gradient-top-1: #000;
+    --gradient-top-2: #000;
+}
+
+body.dark {
+    --gradient-top-1: #ffffff;
+    --gradient-top-2: #ffffff;
+}
+
+.title {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094, #F90000 );
+    animation: gradient 20s linear infinite;
+    background-size: 500%;
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094 , #F90000);
+    animation: gradient 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+.Tecnologias .box {
+    width: 185px;
+    height: 185px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    will-change: transform;
+}
+
+.Tecnologias .box::before {
+    content: '';
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    background-image: conic-gradient(#fd004c,#fe9000,#fff020,#3edf4b,#3363ff,#b102b7,#fd004c);
+    left: -25%;
+    top: -25%;
+    animation: spin 1.5s linear infinite;
+    -webkit-animation: spin 1.5s linear infinite;
+}
+
+.Tecnologias .box::after {
+    content: '';
+    position: absolute;
+    background: var(--primary-color);
+    height: 94%;
+    width: 94%;
+    top: 3%;
+    left: 3%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tecnologias .box i {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.Tecnologias .box h4 {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+
+}
+
+.rainbowBorder {
+    background: linear-gradient(279.24deg, rgb(247, 20, 20) 13.99%, rgb(247, 143, 20) 30.12%, rgb(255, 223, 0) 52.52%, rgb(51, 214, 37) 76.26%, rgb(53, 134, 255) 94.3%);
+}
+
+.style-switcher .s-icon {
+    background-image: conic-gradient(#fd004c,#fe9000,#fff020,#3edf4b,#3363ff,#b102b7,#fd004c);
+}
+
+.rounded_desktop .rounded {
+    border: 1px solid var(--gradient-1);
+}
+
+.name_picture .rounded_mobile {
+    border: 1px solid #009FFF;
+}
+
+.home_content h1 {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.home_content h3 {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.gradientButton {
+    background: linear-gradient(95.11deg, rgb(255, 138, 0) 9.41%, rgb(234, 54, 183) 31.46%, rgb(82, 0, 255) 66.73%, rgb(47, 205, 255) 95.4%);
+}
+
+body .gradientButton:hover .btn {
+    background: linear-gradient(90.22deg, rgba(247, 20, 20, 0.2) -1.27%, rgba(235, 56, 179, 0.2) 33.43%, rgba(126, 118, 254, 0.2) 64.39%, rgba(121, 57, 255, 0.2) 101.23%), linear-gradient(0deg, rgb(220, 215, 215), rgb(220, 215, 215));
+}
+
+body.dark .gradientButton:hover .btn {
+    background: linear-gradient(90.22deg, rgba(247, 20, 20, 0.2) -1.27%, rgba(235, 56, 179, 0.2) 33.43%, rgba(126, 118, 254, 0.2) 64.39%, rgba(121, 57, 255, 0.2) 101.23%), linear-gradient(0deg, rgb(57, 57, 57), rgb(57, 57, 57));
+}
+
+.home-links i {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.btn span {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.tecnologias-pagination button span {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.top .tecnologias_prev_next {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.progress-item.active {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+/* ----------------------------- Desktop Header --------------------------- */
+
+header .nav ul li a,
+header .nav ul li a div {
+    color: var(--secondary-color) !important;
+    background: none !important;
+    background-clip: border-box !important;
+    -webkit-background-clip: border-box !important;
+    -webkit-text-fill-color: var(--secondary-color) !important;
+}
+
+header .nav ul li a.active,
+header .nav ul li a.active div {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 40%,#fff020 45%,#3edf4b 60%,#3363ff 75%,#b102b7 85%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+}
+
+/* ----------------------------- Mobile Header --------------------------- */
+
+header .mobileMenu ul li a {
+    background: none !important;
+    background-clip: border-box !important;
+    color: var(--secondary-color) !important;
+    -webkit-background-clip: border-box !important;
+    -webkit-text-fill-color: var(--secondary-color) !important;
+}
+
+header .mobileMenu ul li a.active {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 40%,#fff020 45%,#3edf4b 60%,#3363ff 75%,#b102b7 85%) !important;
+    background-clip: text !important;
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* ----------------------------- Contato --------------------------- */
+
+.Contato h1 {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.Contato h3 {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.Contato .inputBox i::before,
+.Contato .textareaBox i::before {
+    background: linear-gradient(90deg, #ff1b69, #ff0, #2196f3, #9c27b0, #ff1b69);
+}
+
+.Contato button {
+    border: 3px solid #2196f3;
+}
+
+.Contato button:focus {
+    border-left: 2px solid #2196f3;
+    border: 2px solid #2196f3;
+}
+
+.Contato button span {
+    color: #2196f3;
+}
+
+/* ----------------------------- Sobre Mim --------------------------- */
+
+.SobreMim h1 {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.SobreMim .SobreMim-Content .descricao h3 {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.SobreMim .blob-background .blob1-color1 {
+    stop-color: #ee0979;
+}
+
+.SobreMim .blob-background .blob1-color2 {
+    stop-color: #ff6a00;
+}
+
+.SobreMim .blob-background .blob2-color1 {
+    stop-color: #00f260;
+}
+
+.SobreMim .blob-background .blob2-color2  {
+    stop-color: #0575e6;
+}
+
+.SobreMim .SobreMim-Content .descricao p span, .SobreMim .SobreMim-Content .certificados p {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.SobreMim .certificadosPage::before {
+    background: linear-gradient(#ffc107, #e91e63) !important;
+}
+
+.SobreMim .certificadosPage::after {
+    background: linear-gradient(#2196f3, #31ff38) !important;
+}
+
+
+/* ----------------------------- Projetos --------------------------- */
+
+.Projetos h1 {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.Projetos .projetos_container .projetos_card h3 {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%) !important;
+}
+
+.Projetos .projetos_container .projects_box::before {
+    background: linear-gradient(315deg,  #fd004c 0%,#fe9000 25%,#fff020 36%,#3edf4b 54%,#3363ff 72%,#b102b7 88%) !important;
+}
+
+.Projetos .projetos_container .projects_box .projects_content a {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%) !important;
+}
+
+/* -------------------------------- Scroll Bar ------------------------ */
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #c90d0d, #c5b82b, #3ec83c, #007bff, #224ce0, #ab2e5a, #d01f61, #e02929);
+}

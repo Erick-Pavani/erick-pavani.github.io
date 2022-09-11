@@ -1,1118 +1,702 @@
-<html lang="en" translate="no">
-
-<!-- ----------------------------- Head ----------------------------- -->
-
+<!DOCTYPE html>
+<html lang="pt-br" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ----------------------------- Font Awesome ----------------------------- -->
-
-    <script src="https://kit.fontawesome.com/2546165bae.js" crossorigin="anonymous"></script>
-
-    <!-- ----------------------------- Dev Icons ----------------------------- -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-    <!-- ----------------------------- Google Fonts ----------------------------- -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Dancing+Script:wght@500&family=Josefin+Sans:wght@300&family=Sansita+Swashed:wght@700&display=swap"
-        rel="stylesheet">
-
-    <!-- ----------------------------- CSS ----------------------------- -->
-
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- ----------------------------- Bootstrap CSS ----------------------------- -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!-- ----------------------------- Favicon ----------------------------- -->
-
+    <!--------------------------------------- FavIcon -------------------------------------------------->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- ----------------------------- Título ----------------------------- -->
+    <!--------------------------------------- Font Awesome -------------------------------------------------->
+    <script src="https://kit.fontawesome.com/2546165bae.js" crossorigin="anonymous"></script>
 
+    <!--------------------------------------- DevIcon -------------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!--------------------------------------- Google Fonts -------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+    <!--------------------------------------- Colors -------------------------------------------------->
+    <link rel="stylesheet" href="./css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="./css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5">
+
+    <!--------------------------------------- Common -------------------------------------------------->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--------------------------------------- Color Picker -------------------------------------------------->
+    <link rel="stylesheet" href="./css/colorpicker.css">
+
+    <!--------------------------------------- Title -------------------------------------------------->
     <title>Erick’s Portfolio</title>
+
+    <!--------------------------------------- Javascript -------------------------------------------------->
+    <script src="./js/page-switcher.js" async></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/style-switcher.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('apZ6Y2NY15ZZIpmnF')</script>
+
 </head>
-
-<!-- ----------------------------- Body ----------------------------- -->
-
-<body class="position-relative">
-
-    <!-- ----------------------------- Navbar/Header ----------------------------- -->
-
+<body class="dark">
     <header>
-        <nav id="NavBar"
-            class="navbar navbar-expand-xl nav-fill w-100 position-fixed p-1 top-0 border-bottom border-top border-start border-end fw-normal"
-            style="z-index: 1000; font-size: 217%; font-family: 'Berkshire Swash', cursive!important; background: linear-gradient(to right, #c90d0d, #c5b82b, #3ec83c, #007bff, #224ce0, #ab2e5a, #d01f61, #e02929); border: 3px; border: white;">
-            <span class="navbar-brand"><img class="rounded-circle" src="images/Foto de Perfil.jpg"
-                    alt="Brand Foto de Perfil" style="width: 60px; border: 2px solid white!important;"></span>
-            <span class="navbar-text text-light" style="margin-right: 20px;">Erick - Full Stack Dev</span>
-            <button class="navbar-toggler p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="#HomePage" class="HomePage active" onclick="resetCertificados()">
+                        <div class="rounded_desktop">
+                            <div class="rounded">
+                                <img src="./img/Foto de Perfil.jpg" alt="Foto de Perfil">
+                            </div>
+                            Erick - Full Stack Dev
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#SobreMim" onclick="resetCertificados()">
+                        Sobre Mim
+                    </a>
+                </li>
+                <li>
+                    <a href="#Tecnologias" onclick="resetCertificados()">
+                        Tecnologias
+                    </a>
+                </li>
+                <li>
+                    <a href="#Projetos" onclick="resetCertificados()">
+                        Projetos
+                    </a>
+                </li>
+                <li>
+                    <a href="#Contato" onclick="resetCertificados()">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+            <div class="name_picture">
+                <a href="#HomePage" data-section-index="0" class="logo" onclick="resetCertificados()">
+                    <div class="rounded_mobile">
+                        <img src="./img/Foto de Perfil.jpg" alt="Foto de perfil">
+                    </div>
+                </a>
+            </div>
+            <div class="name">
+                <a href="#HomePage" class="active" onclick="resetCertificados()">
+                    <span class="nome">Erick - Full Stack Dev</span>
+                </a>
+            </div>
+            <div id="menu" class="menu" onclick="setMenu(this);">
+                <div class="menu_line menu_line-q"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 80 80">
+                    <path class="path-a" d="M 24 26 h 36 a 14 14 0 0 1 -6 28 l -28 -28" />
+                    <path class="path-a" d="M 56 54 h -36 a 14 14 0 0 1 6 -28 l 28 28" />
                 </svg>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav w-100">
-
-                    <!-- ----------------------------- Navbar Links ----------------------------- -->
-
-                    <a class="nav-item nav-link text-light active" href="#SobreMim">Sobre Mim</a>
-                    <a class="nav-item nav-link text-light" href="#Tecnologias">Tecnologias</a>
-                    <a class="nav-item nav-link text-light" href="#Projetos">Projetos</a>
-                    <a class="nav-item nav-link text-light" href="#Educacao">Educação</a>
-                    <a class="nav-item nav-link text-light" href="#Contato">Contato</a>
-                </div>
             </div>
         </nav>
-    </header>
-
-    <!-- ----------------------------- Main  ----------------------------- -->
-
-    <main>
-
-        <!-- ----------------------------- Sobre Mim ----------------------------- -->
-
-        <section id="SobreMim" class="SobreMim" style="padding: 15px">
-
-            <!-- ----------------------------- Sobre Mim Título ----------------------------- -->
-
-            <div class="H1-SobreMim container-fluid p-1 pb-0"
-                style="margin-top: 100px; padding-bottom: 1px!important; background: linear-gradient(to right, #e20707, #d4c706); border-radius: 10px;">
-                <h1 class="text-center text-light p-1 fw-bold fst-italic" style="font-family: Dancing Script;">Erick
-                    Sylvestrin Pavani - Full Stack Web Developer</h1>
-            </div>
-
-            <!-- ----------------------------- Sobre Mim Profile Image ----------------------------- -->
-
-            <div class="ProfileImage" style="margin: 0 auto; margin-top: 60px;">
-            </div>
-
-            <!-- ----------------------------- Sobre Mim Texto Introdução ----------------------------- -->
-
-            <div class="HeaderWrapContainer" style="margin: 0 auto; margin-top: 50px;">
-                <div class="HeaderWrapBorder p-3" style="border-radius: 10px;">
-                    <div class="HeaderWrapText">
-                        <h4 class="mb-3" style="margin-top: 10px;">Bem vindo(a) ao meu site!</h4>
-                        <p>
-                            Sou um desenvolvedor web full-stack apaixonado por tecnologia e programação. Gosto muito de
-                            desenvolver
-                            soluções/aplicações
-                            utilizando Python e seus frameworks (Flask e Django) e sites responsivos e interativos
-                            sempre focando em tornar
-                            agradável e simples a
-                            experiência do usuário final. Busco oportunidade para me desenvolver profissionalmente e
-                            ampliar meu potencial.
-                        </p>
-                        <center>
-                            <a class="mt-3" href="Curriculum Vitae.pdf" download>
-                                Baixar Curriculum
-                            </a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ----------------------------- Tecnologias ----------------------------- -->
-
-        <div id="Tecnologias" style="padding-top: 50px;">
-            <section class="Tecnologias" style="padding: 15px;">
-
-                <!-- ----------------------------- Tecnologias Título ----------------------------- -->
-
-                <div class="H1-Tecnologias container-fluid p-1 pb-0"
-                    style="margin-top: 50px; padding-bottom: 1px!important; background: linear-gradient(to right, #3ec83c 0%, #007bff 80%); border-radius: 10px;">
-                    <h1 class="text-center text-light p-1 fw-bold fst-italic"
-                        style="font-family: 'Sansita Swashed', cursive;">Tecnologias</h1>
-                </div>
-
-                <!-- ----------------------------- Tecnologias Sub-Título Front-end ----------------------------- -->
-
-                <div class="container-fluid p-1 text-center mt-4 Tecnologia-Cards">
-                    <div class="row mb-5">
-                        <center>
-                            <div class="col-11 p-1 pb-0 position-relative TecTitles"
-                                style="margin-top: 50px; padding-bottom: 1px!important; background: linear-gradient(to right, #3ec83c 0%, #007bff 80%); border-radius: 10px;">
-                                <h1 class="text-light p-1 fw-bold fst-italic TecTitles"
-                                    style="font-family: 'Sansita Swashed', cursive;">Front-End</h1>
-                                <a href="https://pt.wikipedia.org/wiki/Front-end_e_back-end" target="_blank"
-                                    class="text-decoration-none stretched-link"></a>
-                            </div>
-                        </center>
-                    </div>
-
-                    <!-- ----------------------------- Tecnologias Front-end Cards ----------------------------- -->
-
-                    <div class="row mb-1 mb-lg-4">
-                        <div class="col-md-4 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;" class="fs-6">Front-End</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="fa-brands fa-html5 mb-3 Icon" style="font-size: 100px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;">HTML 5</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;" class="fs-6">Front-End</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="fa-brands fa-css3-alt mb-3 Icon" style="font-size: 100px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;">CSS 3</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/CSS3" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4  mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;" class="fs-6">Front-End</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="fa-brands fa-js-square mb-3 Icon" style="font-size: 100px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;">Javascript</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-md-4 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;" class="fs-6">CSS Framework</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="fa-brands fa-bootstrap mb-3 Icon" style="font-size: 100px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;">Bootstrap</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/Bootstrap_(framework_front-end)"
-                                            target="_blank" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                                                -webkit-background-clip: text;
-                                                                background-clip: text;
-                                                                color: transparent;" class="fs-6">CSS Framework</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="devicon-tailwindcss-plain mb-3 Icon" style="font-size: 117px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                                                -webkit-background-clip: text;
-                                                                background-clip: text;
-                                                                color: transparent;">Tailwind</h3>
-                                        <a href="https://en.wikipedia.org/wiki/CSS_framework" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                                                                        -webkit-background-clip: text;
-                                                                                        background-clip: text;
-                                                                                        color: transparent;"
-                                            class="fs-6">
-                                            JS Library - <span class="text-warning react">Estudando</span>
-                                        </h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="fa-brands fa-react mb-3 Icon" style="font-size: 100px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                                                                        -webkit-background-clip: text;
-                                                                                        background-clip: text;
-                                                                                        color: transparent;">React.Js
-                                        </h3>
-                                        <a href="https://pt.wikipedia.org/wiki/React_(JavaScript)" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ----------------------------- Tecnologias Sub-Título Back-end ----------------------------- -->
-
-                    <div class="row mb-5">
-                        <center>
-                            <div class="col-11 p-1 pb-0 position-relative TecTitles"
-                                style="margin-top: 50px; padding-bottom: 1px!important; background: linear-gradient(to right, #3ec83c 0%, #007bff 80%); border-radius: 10px;">
-                                <h1 class="text-light p-1 fw-bold fst-italic TecTitles"
-                                    style="font-family: 'Sansita Swashed', cursive;">Back-End</h1>
-                                <a href="https://pt.wikipedia.org/wiki/Front-end_e_back-end" target="_blank"
-                                    class="text-decoration-none stretched-link"></a>
-                            </div>
-                        </center>
-                    </div>
-
-                    <!-- ----------------------------- Tecnologias Back-end Cards ----------------------------- -->
-
-                    <div class="row mb-1 mb-xl-4">
-                        <div class="col-md-6 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;" class="fs-6">Back-End</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="fa-brands fa-python mb-3 Icon" style="font-size: 100px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;">Python</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/Python" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;" class="fs-6">Banco de dados</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="fa-solid fa-database mb-3 Icon" style="font-size: 100px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;">SQL</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/SQL" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-md-6 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                                                -webkit-background-clip: text;
-                                                                background-clip: text;
-                                                                color: transparent;" class="fs-6">Python Framework</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="devicon-flask-original-wordmark mb-3 Icon Flask"
-                                            style="font-size: 150px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                                                -webkit-background-clip: text;
-                                                                background-clip: text;
-                                                                color: transparent;">Flask</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/Flask_(framework_web)" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;" class="fs-6">
-                                            Python Framework
-                                        </h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="devicon-django-line-wordmark mb-3 Icon Django"
-                                            style="font-size: 150px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;">Django</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/Django_(framework_web)" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ----------------------------- Tecnologias Sub-Título Gerais ----------------------------- -->
-
-                    <div class="row mb-5">
-                        <center>
-                            <div class="col-11 p-1 pb-0"
-                                style="margin-top: 50px; padding-bottom: 1px!important; background: linear-gradient(to right, #3ec83c 0%, #007bff 80%); border-radius: 10px;">
-                                <h1 class="text-light p-1 fw-bold fst-italic"
-                                    style="font-family: 'Sansita Swashed', cursive;">Gerais</h1>
-                            </div>
-                        </center>
-                    </div>
-
-                    <!-- ----------------------------- Tecnologias Gerais Cards ----------------------------- -->
-
-                    <div class="row mb-4">
-                        <div class="col-md-4 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;" class="fs-6">Versionamento</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="fa-brands fa-git-alt mb-3 Icon" style="font-size: 100px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;">Git</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/Git" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;" class="fs-6">Versionamento</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="fa-brands fa-github mb-3 Icon" style="font-size: 100px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;">Github</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/GitHub" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4  mb-3 mb-lg-0">
-                            <div class="p-1 Teste"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;" class="fs-6">IDE</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="devicon-vscode-plain colored mb-3 Icon" style="font-size: 118px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                        -webkit-background-clip: text;
-                                        background-clip: text;
-                                        color: transparent;">VS Code</h3>
-                                        <a href="https://pt.wikipedia.org/wiki/Visual_Studio_Code" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ----------------------------- Tecnologias Sub-Título Idiomas ----------------------------- -->
-
-                    <div class="row mb-5">
-                        <center>
-                            <div class="col-11 p-1 pb-0"
-                                style="margin-top: 50px; padding-bottom: 1px!important; background: linear-gradient(to right, #3ec83c 0%, #007bff 80%); border-radius: 10px;">
-                                <h1 class="text-light p-1 fw-bold fst-italic"
-                                    style="font-family: 'Sansita Swashed', cursive;">
-                                    Idiomas
-                                </h1>
-                            </div>
-                        </center>
-                    </div>
-
-                    <!-- ----------------------------- Tecnologias Idiomas Cards ----------------------------- -->
-
-                    <div class="row mb-4 justify-content-center">
-                        <div class="col-md-4 mb-3 mb-lg-0">
-                            <div class="p-1"
-                                style="background: linear-gradient(to right, #3ec83c, #007bff); border-radius: 25px;">
-                                <div class="card" style="background: black; border-radius: 20px;">
-                                    <div class="card-header text-white text-start">
-                                        <h5 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                                            -webkit-background-clip: text;
-                                                            background-clip: text;
-                                                            color: transparent;" class="fs-6">
-                                            Idioma
-                                        </h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <i class="fa-solid fa-language Icon" style="font-size: 100px;"></i>
-                                        <h3 style="background: linear-gradient(to right, #3ec83c, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                                            -webkit-background-clip: text;
-                                                            background-clip: text;
-                                                            color: transparent;">
-                                            Inglês fluente
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </div>
-
-        <!-- ----------------------------- Projetos ----------------------------- -->
-
-        <div id="Projetos" style="padding-top: 50px;">
-            <section class="Projetos align-content-center" style="padding: 15px;">
-
-                <!-- ----------------------------- Projetos Título ----------------------------- -->
-
-                <div class="H1-Projetos container-fluid p-1 pb-0"
-                    style="margin-top: 50px; padding-bottom: 1px!important; background: linear-gradient(to right, #224ce0, #ab2e5a); border-radius: 10px;">
-                    <h1 class="text-center text-light p-1 fw-bold fst-italic"
-                        style="font-family: 'Sansita Swashed', cursive;">
+        <div class="rainbowBorder"></div>
+        <div class="mobileMenu">
+            <ul>
+                <li>
+                    <a href="#SobreMim" onclick="resetCertificados()">
+                        Sobre Mim
+                    </a>
+                </li>
+                <div class="rainbowBorder"></div>
+                <li>
+                    <a href="#Tecnologias" onclick="resetCertificados()">
+                        Tecnologias
+                    </a>
+                </li>
+                <div class="rainbowBorder"></div>
+                <li>
+                    <a href="#Projetos" onclick="resetCertificados()">
                         Projetos
-                    </h1>
-                </div>
-
-                <!-- ----------------------------- Projetos Texto ----------------------------- -->
-
-                <div class="ProjectsWrapContainer" style="margin: 0 auto; margin-top: 50px;">
-                    <div class="ProjectsWrapBorder p-3" style="border-radius: 10px;">
-                        <div class="ProjectsWrapText">
-                            <p>
-                                <b>
-                                    Clique em cada um dos projetos para ir até eles e encontrar uma descrição detalhada
-                                    de suas funcionalidades ou simplesmente visite minha página
-                                    no Github com o link abaixo e veja todos os meus projetos!
-                                </b>
-                            </p>
-                            <center>
-                                <a class="mt-3 botao" href="https://github.com/Erick-Pavani" target="_blank">
-                                    Meu Github
-                                </a>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ----------------------------- Projetos Carousel ----------------------------- -->
-
-                <center>
-                    <div class="mt-5 Carrosel"
-                        style="height: 70vh; padding: 7px; background: linear-gradient(to right, #224ce0, #ab2e5a); border-radius: 10px;">
-                        <center>
-                            <div id="carouselProjetos" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="0"
-                                        class="active" aria-current="true" aria-label="Slide 1">
-                                    </button>
-                                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="1"
-                                        aria-label="Slide 2">
-                                    </button>
-                                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="2"
-                                        aria-label="Slide 3">
-                                    </button>
-                                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="3"
-                                        aria-label="Slide 4">
-                                    </button>
-                                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="4"
-                                        aria-label="Slide 5">
-                                    </button>
-                                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="5"
-                                        aria-label="Slide 6">
-                                    </button>
-                                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="6"
-                                        aria-label="Slide 7">
-                                    </button>
-                                </div>
-                                <div class="carousel-inner">
-                                    <!-- ----------------------------- Comunidade Impressionadora ----------------------------- -->
-                                    <div class="carousel-item active"
-                                        style="background-image: url('images/ComunidadeImpressionadora.PNG'); 
-                                            background-size: cover; background-position: center; min-height: 100%; max-height: 100%; box-shadow: inset 0 0 0 3000px rgba(27, 61, 88, .5);">
-                                        <div class="container">
-                                            <h1 class="mt-xl-3">
-                                                Rede Social Comunidade Impressionadora
-                                            </h1>
-                                            <div class="carousel-caption">
-                                                <p>
-                                                    Site feito com Python(Flask), HTML5, CSS3, Javascript e
-                                                    Bootstrap5. 100%
-                                                    responsivo.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="https://comunidade-impressionadora.herokuapp.com/"
-                                            class="stretched-link" target="_blank">
-                                        </a>
-                                    </div>
-                                    <!-- ----------------------------- Hashflix ----------------------------- -->
-                                    <div class="carousel-item"
-                                        style="background-image: url('images/Hashflix.PNG'); background-size: cover; background-position: center; min-height: 100%; max-height: 100%; box-shadow: inset 0 0 0 3000px rgba(27, 61, 88, .5);">
-                                        <div class="container">
-                                            <h1 class="mt-xl-3">
-                                                Hashflix
-                                            </h1>
-                                            <div class="carousel-caption">
-                                                <p>
-                                                    Plataforma de vídeos e séries desenvolvida com Django.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="https://hashflix-django.herokuapp.com/" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                    <!-- ----------------------------- Portfolio Template ----------------------------- -->
-                                    <div class="carousel-item"
-                                        style="background-image: url('images/Portfolio-Template.png'); background-size: cover; background-position: center; min-height: 100%; max-height: 100%; box-shadow: inset 0 0 0 3000px rgba(27, 61, 88, .5);">
-                                        <div class="container">
-                                            <h1 class="mt-xl-3">
-                                                Portfólio Template
-                                            </h1>
-                                            <div class="carousel-caption">
-                                                <p>
-                                                    Template de portfólio interativo para web devs
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="https://erick-pavani.github.io/Portfolio-Template"
-                                            class="stretched-link" target="_blank">
-                                        </a>
-                                    </div>
-                                    <!-- ----------------------------- Previsão Airbnb ----------------------------- -->
-                                    <div class="carousel-item"
-                                        style="background-image: url('images/Data-Science.png'); background-size: cover; background-position: center; min-height: 100%; max-height: 100%; box-shadow: inset 0 0 0 3000px rgba(27, 61, 88, .5);">
-                                        <div class="container">
-                                            <h1 class="mt-xl-3">
-                                                Previsão de preços Airbnb RJ
-                                            </h1>
-                                            <div class="carousel-caption">
-                                                <p>
-                                                    Projeto completo de ciências de dados para prever o
-                                                    preço a ser colocado num anúncio de imóvel.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="https://github.com/Erick-Pavani/Projeto-CienciaDeDados"
-                                            class="stretched-link" target="_blank"></a>
-                                    </div>
-                                    <!-- ----------------------------- Web Scraping ----------------------------- -->
-                                    <div class="carousel-item"
-                                        style="background-image: url('images/Web-Scraping.png'); background-size: cover; background-position: center; min-height: 100%; max-height: 100%; box-shadow: inset 0 0 0 3000px rgba(27, 61, 88, .5);">
-                                        <div class="container">
-                                            <h1 class="mt-xl-3">
-                                                Buscador de Produtos
-                                            </h1>
-                                            <div class="carousel-caption">
-                                                <p>
-                                                    Dado o produto, preço e características, retorna todos os
-                                                    resultados.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="https://github.com/Erick-Pavani/Projeto-AutomacaoWeb"
-                                            class="stretched-link" target="_blank"></a>
-                                    </div>
-                                    <!-- ----------------------------- Automação ----------------------------- -->
-                                    <div class="carousel-item"
-                                        style="background-image: url('images/Automacao.jpg'); background-size: cover; background-position: center; min-height: 100%; max-height: 100%; box-shadow: inset 0 0 0 3000px rgba(27, 61, 88, .5);">
-                                        <div class="container">
-                                            <h1 class="mt-xl-3">
-                                                Automação de tarefas com Python
-                                            </h1>
-                                            <div class="carousel-caption">
-                                                <p>
-                                                    Cálculo de faturamento diário, envio de emails e relatórios.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="https://github.com/Erick-Pavani/Projeto-Automacao"
-                                            class="stretched-link" target="_blank"></a>
-                                    </div>
-                                    <!-- ----------------------------- Portfólio ----------------------------- -->
-                                    <div class="carousel-item"
-                                        style="background-image: url('images/Portolio.png'); background-size: cover; background-position: center; min-height: 100%; max-height: 100%; box-shadow: inset 0 0 0 3000px rgba(27, 61, 88, .5);">
-                                        <div class="container">
-                                            <h1 class="mt-xl-3">
-                                                Portfólio (Este site)
-                                            </h1>
-                                            <div class="carousel-caption">
-                                                <p>
-                                                    HTML5, CSS3, Javascript e Bootstrap5. 100%
-                                                    responsivo.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="https://github.com/Erick-Pavani/erick-pavani.github.io" target="_blank"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </center>
-                    </div>
-                </center>
-            </section>
+                    </a>
+                </li>
+                <div class="rainbowBorder"></div>
+                <li>
+                    <a href="#Contato" onclick="resetCertificados()">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+            <div class="rainbowBorder mobile"></div>
         </div>
-
-        <!-- ----------------------------- Educação ----------------------------- -->
-
-        <div id="Educacao" style="padding-top: 50px;">
-            <section class="Educacao" style="padding: 15px;">
-
-                <!-- ----------------------------- Educação Título ----------------------------- -->
-
-                <div class="H1-Educacao container-fluid p-1 pb-0"
-                    style="margin-top: 50px; padding-bottom: 1px!important; background: linear-gradient(to right, #f7005c, #d74102); border-radius: 10px;">
-                    <h1 class="text-center text-light p-1 fw-bold fst-italic"
-                        style="font-family: 'Sansita Swashed', cursive;">Educação</h1>
+    </header>
+    <main>
+        <!-- HomePage Begin -->
+        <div class="HomePage section active" id="HomePage">
+            <div class="matrix-rain">
+                <canvas id="canvas1"></canvas>
+            </div>
+            <div class="home_content">
+                <h1>Erick</h1>
+                <h3>I’m a <span class="typing"></span></h3>
+                <div class="gradientButton">
+                    <a href="https://drive.google.com/file/d/1d1afbVwjym3WuXFFM7hzRBMtnUPS0ogJ/view?usp=sharing" target="_blank">
+                        <button class="btn">
+                            <span>
+                                Curriculum
+                            </span>
+                        </button>
+                    </a>
                 </div>
-
-                <!-- ----------------------------- Educação Cards ----------------------------- -->
-
-                <!-- ----------------------------- Ensino Médio ----------------------------- -->
-
-                <div class="container-fluid mt-5 mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Ensino Médio Técnico</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3>Informática - Escola Prof. Luiz Rosa - Jundiaí - SP - 2014/2016</h3>
-                                <p>Ensino médio com curso técnico de "Informática". Disciplinas como Visual Basic, ASP,
-                                    HTML, C#, Orientação a Objetos, Lógica de Programação e Desenvolvimento Mobile
-                                    (Android Studio).</p>
-                                <a href="http://www.luizrosa.com.br/" target="_blank">Escola Prof. Luiz Rosa</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="home-links">
+                    <a href="https://www.linkedin.com/in/erick-pavani/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Erick-Pavani" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#Contato" data-section-index="0" class="contact-me">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/5511981082503" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
-
-                <!-- ----------------------------- Faculdade ----------------------------- -->
-
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Graduação - Tecnólogo</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3>Análise e Desenvolvimento de Sistemas - Fatec Jundiaí - SP - 2018/2020</h3>
-                                <p>Disciplinas como Estrutura de Dados, Engenharia de Software, Orientação a Objetos,
-                                    Lógica de Programação, Sistemas Operacionais, Desenvolvimento Web (PHP, JavaScript,
-                                    HTML, CSS), C#, Java, dentre outras linguagens.
-                                </p>
-                                <a href="http://www.fatecjd.edu.br/portal/" target="_blank">Fatec Jundiaí</a>
-                                <a href="https://drive.google.com/file/d/1qbf59oHHpfQfREDzrUJqE3JPgafXcKlJ/view?usp=sharing"
-                                    target="_blank">Diploma</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ----------------------------- Cursos/Bootcamps Hashtag ----------------------------- -->
-
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Curso</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3>Python Impressionador - Hashtag Treinamentos</h3>
-                                <p>Curso com 100+ horas de duração. Todos os aspectos de Python, desde a base até as
-                                    respectivas aplicações de Python no mercado de trabalho, Web Scraping com Selenium,
-                                    Ciência de Dados, Automações e Desenvolvimento Web com Flask e Django. Além disso o
-                                    curso possui módulos de integrações com diversos serviços diferentes como API's,
-                                    PowerBi, etc...
-                                </p>
-                                <a href="https://www.hashtagtreinamentos.com/" target="_blank">Hashtag
-                                    Treinamentos</a><a
-                                    href="https://drive.google.com/file/d/1ZFHtDkZE0SX6_c1PElz5jKFnCkfKDC7Q/view?usp=sharing"
-                                    target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Bootcamp</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">Intensivão de SQL - Hashtag Treinamentos</h3>
-                                <a href="https://www.hashtagtreinamentos.com/" target="_blank">Hashtag Treinamentos</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Bootcamp</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">Intensivão de PowerBI - Hashtag Treinamentos</h3>
-                                <a href="https://www.hashtagtreinamentos.com/" target="_blank">Hashtag Treinamentos</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Bootcamp</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">Intensivão de Python - Hashtag Treinamentos</h3>
-                                <a href="https://www.hashtagtreinamentos.com/" target="_blank">Hashtag Treinamentos</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ----------------------------- Linkedin Learning ----------------------------- -->
-
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Curso</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">Fundamentos de Programação: Design Orientado a Objetos - Linkedin
-                                    Learning</h3>
-                                <a href="https://www.linkedin.com/learning/fundamentos-de-programacao-design-orientado-a-objetos/o-que-e-programacao-orientada-a-objetos?autoplay=true"
-                                    target="_blank">Curso</a><a
-                                    href="https://www.linkedin.com/learning/certificates/cd3b34f0e12d50bfbe494fc89c11b360767b0912fa2408ff93ea56e8ff26b8f9?trk=share_certificate"
-                                    target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Curso</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">HTML Essential Training - Linkedin Learning</h3>
-                                <a href="https://www.linkedin.com/learning/html-essential-training-4/what-is-html?autoplay=true"
-                                    target="_blank">Curso</a><a
-                                    href="https://www.linkedin.com/learning/certificates/e8453b71f0cc69442917921d5659e8c99cccb825c94ac47fa76c69ae0afc287c?trk=share_certificate"
-                                    target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Curso</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">CSS Essential Training - Linkedin Learning</h3>
-                                <a href="https://www.linkedin.com/learning/css-essential-training-3/styling-documents-consistently?autoplay=true"
-                                    target="_blank">Curso</a><a
-                                    href="https://www.linkedin.com/learning/certificates/9ea08910d8e05b51987c09be402c4a3af1ec8262ea63578e116e8013e4e33629"
-                                    target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Curso</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">JavaScript Essential Training - Linkedin Learning</h3>
-                                <a href="https://www.linkedin.com/learning/javascript-essential-training/javascript-the-soil-from-which-the-modern-web-grows?autoplay=true"
-                                    target="_blank">Curso</a><a
-                                    href="https://www.linkedin.com/learning/certificates/3468b68d3fe6576995f51529843d3941c96e38794e7b5a97b9fd726fd5949d11?trk=share_certificate"
-                                    target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Curso</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">Técnicas Avançadas de Python - Linkedin Learning</h3>
-                                <a href="https://www.linkedin.com/learning/tecnicas-avancadas-de-python/boas-vindas?autoplay=true"
-                                    target="_blank">Curso</a><a
-                                    href="https://www.linkedin.com/learning/certificates/6140796d0241a85a3919f6e609549b31654695d888daad63e1f9db37f7ac7b71?trk=share_certificate"
-                                    target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Curso</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">Bootstrap 5 Essential Training - Linkedin Learning</h3>
-                                <a href="https://www.linkedin.com/learning/bootstrap-5-essential-training/the-most-popular-framework?autoplay=true"
-                                    target="_blank">Curso</a><a
-                                    href="https://www.linkedin.com/learning/certificates/e7147f46b7edfee3bfe352b55938b99af9c0e396f9a7751719381e244fec8a0c?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_details_shares%3BdtH3xxRdSO2Lz1M6UVzhgg%3D%3D"
-                                    target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Curso</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">Programming Foundations: Version Control with Git - Linkedin Learning
-                                </h3>
-                                <a href="https://www.linkedin.com/learning/programming-foundations-version-control-with-git/don-t-lose-work?autoplay=true"
-                                    target="_blank">Curso</a><a
-                                    href="https://www.linkedin.com/learning/certificates/5b6fe42bcfda4d38961bfedd1d9c3d0a846973718ee2975ed43b70c870235b43"
-                                    target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                                -webkit-background-clip: text;
-                                                background-clip: text;
-                                                color: transparent;" class="fs-3 fw-bold">Curso</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">Tailwind CSS 3 Essential Training - Linkedin Learning
-                                </h3>
-                                <a href="https://www.linkedin.com/learning/tailwind-css-3-essential-training/why-utility-first-frameworks-matter?autoplay=true"
-                                    target="_blank">Curso</a><a
-                                    href="https://www.linkedin.com/learning/certificates/9dda5f177c68a5adb0856aa0a3b91c145200acece484302401f7f9fe9bb8e87e?trk=share_certificate"
-                                    target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ----------------------------- Kenzie Academy ----------------------------- -->
-
-                <div class="container-fluid mb-5 Educacao-Cards" style="font-family: 'Josefin Sans', sans-serif;">
-                    <div class="p-1 text-center w-100"
-                        style="background: linear-gradient(to right, #f7005c, #d74102); border-radius: 25px;">
-                        <div class="card" style="background: black; border-radius: 20px;">
-                            <div class="card-header text-white text-start">
-                                <h5 style="background: linear-gradient(to right, #f7005c, #d74102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                                color: transparent;" class="fs-3 fw-bold">Bootcamp</h5>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="Curso">Maratona de Programação - Kenzie Academy</h3>
-                                <a href="https://kenzie.com.br/" target="_blank">Kenzie Academy</a><a
-                                    href="https://drive.google.com/file/d/1CUFSiZ_-iiYF10qK629v7rzfCoiKFiBE/view?usp=sharing"
-                                    target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- ----------------------------- Contato/Footer  ----------------------------- -->
-
-    <footer id="Contato" class="Contato" style="padding: 15px;">
-        <div class="text-center">
-            <h2 class="fw-bold">Me contrate! Digo... contate rs</h2>
-            <div class="d-inline-flex justify-content-center w-100">
-
-                <!-- ----------------------------- Contato Links  ----------------------------- -->
-
-                <a href="mailto:erickspavanii@gmail.com" target="_blank" class="Email" style="width: 25%;"><i
-                        class="fa-solid fa-envelope" style="font-size: 50px;"></i></a>
-                <a href="https://github.com/Erick-Pavani" target="_blank" class="GitHub" style="width: 25%;"><i
-                        class="fa-brands fa-github" style="font-size: 50px;"></i></a>
-                <a href="https://www.linkedin.com/in/erick-pavani/" target="_blank" class="Linkedin"
-                    style="width: 25%;"><i class="fa-brands fa-linkedin" style="font-size: 50px;"></i></a>
             </div>
         </div>
-    </footer>
+        <!-- HomePage End -->
+        <!-- SobreMim Begin -->
+        <div class="SobreMim section" id="SobreMim">
+            <div class="background">
+                <!-- Blob-1 -->
+                <div class="blob-background">
+                    <div class="blob">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="blobSvg"  class="blob-1">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop class="blob1-color1" offset="0%"></stop>
+                                    <stop class="blob1-color2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                values="M434,311Q439,372,379.5,387.5Q320,403,277.5,379.5Q235,356,163,394.5Q91,433,104,361Q117,289,101,245.5Q85,202,112,161.5Q139,121,177.5,65.5Q216,10,281,24.5Q346,39,361,104Q376,169,402.5,209.5Q429,250,434,311Z;
+                                M385,293Q383,336,356.5,380.5Q330,425,272,461Q214,497,150.5,467.5Q87,438,69,373.5Q51,309,43.5,248Q36,187,76.5,141.5Q117,96,175.5,117Q234,138,289,90.5Q344,43,386,89.5Q428,136,407.5,193Q387,250,385,293Z;
+                                M382,297.5Q397,345,360.5,378Q324,411,271,442Q218,473,194.5,407Q171,341,160.5,310Q150,279,120.5,241Q91,203,131,181Q171,159,201.5,142.5Q232,126,263,139.5Q294,153,336,160.5Q378,168,372.5,209Q367,250,382,297.5Z;
+                                M428,311Q440,372,388,405.5Q336,439,282,420Q228,401,161.5,414.5Q95,428,77,367Q59,306,74.5,254.5Q90,203,97,142Q104,81,163,66.5Q222,52,258,103Q294,154,370,139Q446,124,431,187Q416,250,428,311Z;
+                                M401.5,291Q377,332,335,338Q293,344,261,370.5Q229,397,200.5,368.5Q172,340,102,327Q32,314,74.5,262.5Q117,211,102.5,137Q88,63,158.5,83Q229,103,289.5,67.5Q350,32,383,87.5Q416,143,421,196.5Q426,250,401.5,291Z;
+                                M434,311Q439,372,379.5,387.5Q320,403,277.5,379.5Q235,356,163,394.5Q91,433,104,361Q117,289,101,245.5Q85,202,112,161.5Q139,121,177.5,65.5Q216,10,281,24.5Q346,39,361,104Q376,169,402.5,209.5Q429,250,434,311Z">
+                                </animate>
+                                </path>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Blob-2 -->
+                <div class="blob-background">
+                    <div class="blob">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="blobSvg" class="blob-2">
+                            <defs>
+                                <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop class="blob2-color1" offset="0%"></stop>
+                                    <stop class="blob2-color2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient2)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                values="M382,297.5Q397,345,360.5,378Q324,411,271,442Q218,473,194.5,407Q171,341,160.5,310Q150,279,120.5,241Q91,203,131,181Q171,159,201.5,142.5Q232,126,263,139.5Q294,153,336,160.5Q378,168,372.5,209Q367,250,382,297.5Z;
+                                M385,293Q383,336,356.5,380.5Q330,425,272,461Q214,497,150.5,467.5Q87,438,69,373.5Q51,309,43.5,248Q36,187,76.5,141.5Q117,96,175.5,117Q234,138,289,90.5Q344,43,386,89.5Q428,136,407.5,193Q387,250,385,293Z;
+                                M434,311Q439,372,379.5,387.5Q320,403,277.5,379.5Q235,356,163,394.5Q91,433,104,361Q117,289,101,245.5Q85,202,112,161.5Q139,121,177.5,65.5Q216,10,281,24.5Q346,39,361,104Q376,169,402.5,209.5Q429,250,434,311Z;
+                                M401.5,291Q377,332,335,338Q293,344,261,370.5Q229,397,200.5,368.5Q172,340,102,327Q32,314,74.5,262.5Q117,211,102.5,137Q88,63,158.5,83Q229,103,289.5,67.5Q350,32,383,87.5Q416,143,421,196.5Q426,250,401.5,291Z;
+                                M382,297.5Q397,345,360.5,378Q324,411,271,442Q218,473,194.5,407Q171,341,160.5,310Q150,279,120.5,241Q91,203,131,181Q171,159,201.5,142.5Q232,126,263,139.5Q294,153,336,160.5Q378,168,372.5,209Q367,250,382,297.5Z">
+                                </animate>
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Descrição -->
+                <div class="SobreMim-Content">
+                    <h1>Quem sou eu?</h1>
+                    <div class="descricao">
+                        <h3>Bem vindo ao meu site!</h3>
+                        <p>
+                            Me chamo <span>Erick</span>, prazer em te conhecer. Atualmente tenho <span>23</span> anos e sou formado em <span>Análise e desenvolvimento de sistemas</span> pela <span>FATEC</span>. Sou um <span>desenvolvedor web full stack</span> com uma paixão imensa por <span>tecnologias web</span>, <span>Python</span> e <span>automações</span>. Sou extremamente motivado à resolução de problemas e desafios, não apenas sou movido por eles mas os busco constantemente. Meu <span>objetivo profissional</span> é construir uma carreira de sucesso na área de desenvolvimento e construir <span>aplicações</span> que resolvam problemas das pessoas através dessa maravilha que é a tecnologia. Procuro sempre desenvolver <span>soluções</span> que sejam simples e agradáveis ao usuário final. Fique à vontade para explorar este site e todas as suas funcionalidades e claro, me <span>mandar um email</span> através da <span>aba de contatos</span>, ficarei mais do que feliz em conversar com você!
+                        </p>
+                    </div>
+                    <div class="certificados" onclick="showCertificados()">
+                        <p>Certificados</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificadosPage hidden">
+                <div class="top"> 
+                    <i class="fa-regular fa-circle-left tecnologias_prev_next new_handle left-handle"></i>
+                    <div>
+                        <h1>Certificados</h1>
+                    </div>
+                    <i class="fa-regular fa-circle-right tecnologias_prev_next new_handle right-handle"></i>
+                </div>
+                <div class="slider_teste">
+                    <div class="tab_teste">
+                        <div class="certificadosList">
+                            <!----------- List Item 1 ---------->
+                            <a href="https://drive.google.com/file/d/1qbf59oHHpfQfREDzrUJqE3JPgafXcKlJ/view" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/Fatec.jpg" alt="Logo FATEC">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#1</small>
+                                        </h2>
+                                        <h4>Graduação - Análise e Desenvolvimento de Sistemas</h4>
+                                        <p>Fatec Jundiaí</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!----------- List Item 2 ---------->
+                            <a href="https://drive.google.com/file/d/1ZFHtDkZE0SX6_c1PElz5jKFnCkfKDC7Q/view" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/Hashtag.jpg" alt="Logo Hashtag Treinamentos">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#2</small>
+                                        </h2>
+                                        <h4>Python Impressionador</h4>
+                                        <p>Hashtag Treinamentos</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!----------- List Item 3 ---------->
+                            <a href="https://www.linkedin.com/learning/certificates/cd3b34f0e12d50bfbe494fc89c11b360767b0912fa2408ff93ea56e8ff26b8f9?trk=share_certificate" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#3</small>
+                                        </h2>
+                                        <h4>Design orientado a objetos</h4>
+                                        <p>Linkedin Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!----------- List Item 4 ---------->
+                            <a href="https://www.linkedin.com/learning/certificates/e8453b71f0cc69442917921d5659e8c99cccb825c94ac47fa76c69ae0afc287c?trk=share_certificate" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#4</small>
+                                        </h2>
+                                        <h4>HTML Essential Training</h4>
+                                        <p>Linkedin Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab_teste">
+                        <div class="certificadosList">
+                            <!-- --------- List Item 5 --------->
+                            <a href="https://www.linkedin.com/learning/certificates/9ea08910d8e05b51987c09be402c4a3af1ec8262ea63578e116e8013e4e33629" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#5</small>
+                                        </h2>
+                                        <h4>CSS Essential Training</h4>
+                                        <p>Linkedin Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!----------- List Item 6 ---------->
+                            <a href="https://www.linkedin.com/learning/certificates/3468b68d3fe6576995f51529843d3941c96e38794e7b5a97b9fd726fd5949d11?trk=share_certificate" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#6</small>
+                                        </h2>
+                                        <h4>JavaScript Essential Training</h4>
+                                        <p>Linkedin Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!----------- List Item 7 ---------->
+                            <a href="https://www.linkedin.com/learning/certificates/6140796d0241a85a3919f6e609549b31654695d888daad63e1f9db37f7ac7b71?trk=share_certificate" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#7</small>
+                                        </h2>
+                                        <h4>Técnicas Avançadas de Python</h4>
+                                        <p>Linkedin Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!----------- List Item 8 ---------->
+                            <a href="https://www.linkedin.com/learning/certificates/e7147f46b7edfee3bfe352b55938b99af9c0e396f9a7751719381e244fec8a0c?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_details_shares%3BdtH3xxRdSO2Lz1M6UVzhgg%3D%3D" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#8</small>
+                                        </h2>
+                                        <h4>Bootstrap 5 Essential Training</h4>
+                                        <p>Linkedin Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab_teste">
+                        <div class="certificadosList">
+                            <!----------- List Item 9 ---------->
+                            <a href="https://www.linkedin.com/learning/certificates/5b6fe42bcfda4d38961bfedd1d9c3d0a846973718ee2975ed43b70c870235b43" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#9</small>
+                                        </h2>
+                                        <h4>Version Control with Git</h4>
+                                        <p>Linkedin Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!----------- List Item 10 ---------->
+                            <a href="https://www.linkedin.com/learning/certificates/9dda5f177c68a5adb0856aa0a3b91c145200acece484302401f7f9fe9bb8e87e?trk=share_certificate" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#10</small>
+                                        </h2>
+                                        <h4>Tailwind CSS 3 Essential Training</h4>
+                                        <p>Linkedin Learning</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!----------- List Item 11 ---------->
+                            <a href="https://drive.google.com/file/d/1Rbx0BxfohPHgkOJ2h9Rdif5BMAWFSzBT/view?usp=sharing" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/OneBitCode.png" alt="logo OneBitCode">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#11</small>
+                                        </h2>
+                                        <h4>HTML5</h4>
+                                        <p>OneBitCode</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!----------- List Item 12 ---------->
+                            <a href="https://drive.google.com/file/d/1JcqLP6iUL6p1RY6XHETTlieR7VlgHMC5/view?usp=sharing" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/OneBitCode.png" alt="logo OneBitCode">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#12</small>
+                                        </h2>
+                                        <h4>CSS3</h4>
+                                        <p>OneBitCode</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab_teste">
+                        <div class="certificadosList">
+                            <!----------- List Item 13 ---------->
+                            <a href="https://drive.google.com/file/d/1bKud8UKFU3RtKxAkqMw7G2sK996o2Axy/view?usp=sharing" target="_blank">
+                                <div class="listItem">
+                                    <div class="imgBox">
+                                        <img src="./img/Certificados-Logos/UIPath.png" alt="Logo UIPath">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="rank">
+                                            <small>#13</small>
+                                        </h2>
+                                        <h4>UIPath Developer Foundation</h4>
+                                        <p>UIPath Official Docs</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SobreMim End-->
+        <!-- Tecnologias Begin-->
+        <div class="Tecnologias section" id="Tecnologias">
+            <div class="progress-bar">
+                <div class="barra-progresso"></div>
+            </div>
+            <div class="top"> 
+                <i class="fa-regular fa-circle-left tecnologias_prev_next handle left-handle"></i>
+                <div>
+                    <h1 class="title">
+                    </h1>
+                    <div class="loader"></div>
+                </div>
+                <i class="fa-regular fa-circle-right tecnologias_prev_next handle right-handle"></i>
+            </div>
+            <div class="slider">
+                <!-- Front-End Begin -->
+                <div class="tab">
+                    <div class="cards">
+                        <div class="box">
+                            <span></span>
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="fa-brands fa-sass"></i>
+                            <h4>Sass</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <h4>Bootstrap</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="devicon-tailwindcss-plain colored"></i>
+                            <h4>Tailwind</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="fa-brands fa-js"></i>
+                            <h4>Javascript</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="fa-brands fa-react"></i>
+                            <h4>React</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Front-End End -->
+                <!-- Back-End Begin -->
+                <div class="tab">
+                    <div class="cards">
+                            <div class="box">
+                                <span></span>
+                                <i class="fa-brands fa-python"></i>
+                                <h4>Python</h4>
+                            </div>
+                            <div class="box">
+                                <span></span>
+                                <i class="devicon-flask-original colored"></i>
+                                <h4>Flask</h4>
+                            </div>
+                            <div class="box">
+                                <span></span>
+                                <i class="devicon-django-plain colored"></i>
+                                <h4>Django</h4>
+                            </div>
+                            <div class="box">
+                                <span></span>
+                                <i class="fa-solid fa-database"></i>
+                                <h4>SQL</h4>
+                            </div>
+                    </div>
+                </div>
+                <!-- Back-End End -->
+                <!-- General Begin -->
+                <div class="tab">
+                    <div class="cards">
+                        <div class="box">
+                            <span></span>
+                            <i class="fa-brands fa-git-alt"></i>
+                            <h4>Git</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="fa-brands fa-github"></i>
+                            <h4>Github</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="devicon-vscode-plain colored"></i>
+                            <h4>VS Code</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="devicon-selenium-original colored"></i>
+                            <h4>Selenium</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="fa-solid fa-robot"></i>
+                            <h4>UIPath</h4>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <i class="fa-solid fa-language"></i>
+                            <h4 class="too_long">Inglês fluente</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- General End -->
+            </div>
+        </div>
+        <!-- Tecnologias End -->
+        <!-- Projetos Begin -->
+        <div class="Projetos section" id="Projetos">
+            <h1>Projetos</h1>
+            <div class="projetos_container">
+                <!---------------- Comunidade Impressionadora -------------->
+                <div class="projects_box">
+                    <div class="projects_content">
+                        <img src="./img/Projetos/ComunidadeImpressionadora.PNG" alt="Print Comunidade Impressionadora">
+                        <h2>Comunidade Impressionadora<br><span>Python-Flask</span></h2>
+                        <a href="https://comunidade-impressionadora.herokuapp.com/" target="_blank">Acessar</a>
+                        <a href="https://github.com/Erick-Pavani/Comunidade-Impressionadora" target="_blank">Código</a>
+                    </div>
+                </div>
+                <!---------------- Hashflix -------------->
+                <div class="projects_box">
+                    <div class="projects_content">
+                        <img src="./img/Projetos/Hashflix.PNG" alt="Print Hashflix">
+                        <h2>Hashflix<br><span>Python-Django</span></h2>
+                        <a href="https://hashflix-django.herokuapp.com/" target="_blank">Acessar</a>
+                        <a href="https://github.com/Erick-Pavani/Hashflix-Django" target="_blank">Código</a>
+                    </div>
+                </div>
+                <!---------------- Portfolio Template -------------->
+                <div class="projects_box">
+                    <div class="projects_content">
+                        <img src="./img/Projetos/Portfolio-Template.png" alt="Print Portfolio Template">
+                        <h2>Portfolio Template<br><span>HTML-CSS-JS</span></h2>
+                        <a href="https://erick-pavani.github.io/Portfolio-Template" target="_blank">Acessar</a>
+                        <a href="https://github.com/Erick-Pavani/Portfolio-Template" target="_blank">Código</a>
+                    </div>
+                </div>
+                <!---------------- Old Portfolio -------------->
+                <div class="projects_box">
+                    <div class="projects_content">
+                        <img src="./img/Projetos/Portolio.png" alt="Print Old Portfolio">
+                        <h2>Old Portfolio<br><span>Bootstrap-JS</span></h2>
+                        <a href="https://erick-pavani.github.io" target="_blank">Acessar</a>
+                        <a href="https://hashflix-django.herokuapp.com/" target="_blank">Código</a>
+                    </div>
+                </div>
+                <!---------------- Web Scraping -------------->
+                <div class="projects_box">
+                    <div class="projects_content">
+                        <img src="./img/Projetos/Web-Scraping.png" alt="Print Projeto Web Scraping">
+                        <h2>Web Scraping<br><span>Python-Selenium</span></h2>
+                        <a href="https://github.com/Erick-Pavani/Projeto-AutomacaoWeb" target="_blank">Código</a>
+                    </div>
+                </div>
+                <!---------------- Automation -------------->
+                <div class="projects_box">
+                    <div class="projects_content">
+                        <img src="./img/Projetos/Automacao.jpg" alt="Print Projeto Automation">
+                        <h2>Automation<br><span>Python</span></h2>
+                        <a href="https://github.com/Erick-Pavani/Projeto-Automacao" target="_blank">Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projetos End-->
+        <!-- Contato Begin -->
+        <div class="Contato section" id="Contato">
+            <h1>Contrate-me!</h1>
+            <h3>Digo... Contate-me!</h3>
+            <div class="contatoLayout">
+                <div class="contatoInputs">
+                    <div class="inputBox Nome">
+                        <input type="text" pattern="[a-z, A-Z]*" id="mailName" maxlength="35" onfocusout="nameInput(this)" required>
+                        <span>Nome</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox Email">
+                        <input type="email" id="mailEmail" maxlength="30" onfocusout="mailInput(this)" required>
+                        <span>Email</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox Assunto">
+                        <input type="text" id="mailSubject" maxlength="45" required>
+                        <span>Assunto</span>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="contatoTextarea">
+                    <div class="textareaBox Mensagem">
+                        <textarea name="textareaEmail" id="mailMessage" cols="10" rows="5" maxlength="205" required></textarea>
+                        <span>Mensagem</span>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="mailSubmit" onclick="this.focus(), SendMail()">
+                <span>Enviar</span>
+                <i class="fa-solid fa-check"></i>
+            </button>
+        </div>
+        <!-- Contato End-->
+    </main>
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-spin"></i>
+        </div>
+        <h4>Cores</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1'), alternateGradient()"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2'), alternateGradient()"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3'), alternateGradient()"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4'), alternateGradient()"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5'), alternateGradient()"></span>
+        </div>
+    </div>
+    <div id="loading">
+        <h1>Carregando...</h1>
+    </div>  
 
-    <!-- ----------------------------- Bootstrap Javascript e Popper  ----------------------------- -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
-
-    <!-- ----------------------------- Javascript  ----------------------------- -->
-
-    <script src="script.js"></script>
-
+    <!-------------------------------- Javascript -------------------------------------->
+    <script src="./js/matrix-rain.js"></script>
+    <script src="./js/tecnologias.js"></script>
+    <script src="./js/EmailButton.js"></script>
+    <script src="./js/certificados.js"></script>
+    <script src="./js/projetos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 </body>
-
 </html>
+
+

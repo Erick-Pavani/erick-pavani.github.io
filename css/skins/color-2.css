@@ -1,0 +1,216 @@
+:root {
+    --gradient-1: #4b05f0;
+    --gradient-2: #cb2446;
+    --gradient-top-1: #4b05f0;
+    --gradient-top-2: #cb2446;
+}
+
+.title {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: gradient 20s linear infinite;
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2), var(--gradient-1));
+    background-size: 500%;
+    -webkit-animation: gradient 20s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2), var(--gradient-1));
+    animation: gradient 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+.Tecnologias .box {
+    position: relative;
+    width: 185px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    will-change: transform;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+}
+
+.Tecnologias .box::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, var(--gradient-1));
+    animation: animate 4s linear infinite;
+    -webkit-animation: animate 4s linear infinite;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.Tecnologias .box::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, var(--gradient-2));
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.Tecnologias .box i {
+    background: linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+.Tecnologias .box h4 {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+.rainbowBorder {
+    background: linear-gradient(279.24deg, var(--gradient-1), var(--gradient-2));
+}
+
+.style-switcher .s-icon {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2))
+}
+
+.name_picture .rounded_mobile, .rounded_desktop .rounded {
+    border: 1px solid var(--gradient-1);
+}
+
+.home_content h1 {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+}
+
+.home_content h3 {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+
+}
+
+.gradientButton {
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2));
+}
+
+body .gradientButton:hover .btn {
+    background: linear-gradient(90deg, rgba(75, 5, 240, 0.2), rgba(203, 36, 70, 0.2)), linear-gradient(0deg, rgb(220, 215, 215), rgb(220, 215, 215));
+}
+
+body.dark .gradientButton:hover .btn {
+    background: linear-gradient(90deg, rgba(75, 5, 240, 0.2), rgba(203, 36, 70, 0.2)), linear-gradient(0deg, rgb(57, 57, 57), rgb(57, 57, 57));
+}
+
+.home-links i {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+.btn span {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+.tecnologias-pagination button span {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+.top .tecnologias_prev_next {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+.progress-item.active {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+/* ----------------------------- Contato --------------------------- */
+
+.Contato h1 {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+}
+
+.Contato h3 {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+}
+
+.Contato .inputBox i::before,
+.Contato .textareaBox i::before {
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2), var(--gradient-1));
+}
+
+.Contato button {
+    border: 3px solid var(--gradient-1);
+}
+
+.Contato button:focus {
+    border-left: 2px solid var(--gradient-1);
+    border: 2px solid var(--gradient-1);
+}
+
+.Contato button span {
+    color: var(--gradient-1);
+}
+
+/* ----------------------------- Sobre Mim --------------------------- */
+
+.SobreMim h1 {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+}
+
+.SobreMim .SobreMim-Content .descricao h3 {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+}
+
+.SobreMim .blob-background .blob1-color1 {
+    stop-color: var(--gradient-1);
+}
+
+.SobreMim .blob-background .blob1-color2 {
+    stop-color: var(--gradient-2);
+}
+
+.SobreMim .blob-background .blob2-color1{
+    stop-color: var(--gradient-2);
+}
+
+.SobreMim .blob-background .blob2-color2 {
+    stop-color: var(--gradient-1);
+}
+
+.SobreMim .SobreMim-Content .descricao p span, .SobreMim .SobreMim-Content .certificados p {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+}
+
+/* ----------------------------- Projetos --------------------------- */
+
+.Projetos h1 {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+}
+
+/* ------------------------------- Scroll Bar ---------------------- */
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, var(--gradient-1), var(--gradient-2));
+}
