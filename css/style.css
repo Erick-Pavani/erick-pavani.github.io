@@ -28,6 +28,24 @@ body {
     overflow-x: hidden !important;
 }
 
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 99;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading h1 {
+    color: #2196f3;
+    font-size: 50px;
+}
+
 header {
     width: 100%;
     color: var(--secondary-color);
@@ -2207,21 +2225,3 @@ body.dark .Projetos .projetos_container .projects_box .projects_content {
 }
 
 /* -------------------------------- Scroll Bar ------------------------------------ */
-
-#loading {
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    position: fixed;
-    z-index: 99;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#loading h1 {
-    color: #2196f3;
-    font-size: 50px;
-}
