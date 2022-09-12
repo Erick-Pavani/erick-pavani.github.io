@@ -2029,6 +2029,7 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -o-border-radius: 50%;
     overflow: hidden;
     will-change: transform;
+    mask-image: none;
     -webkit-mask-image: radial-gradient(white, black) !important;
 }
 
@@ -2206,21 +2207,6 @@ body.dark .Projetos .projetos_container .projects_box .projects_content {
     }
 }
 
-/* ------------------------------------------ Testing ------------------------------- */
-
-.hidden, .hidden * {
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-    min-height: 0 !important;
-    max-height: 0 !important;
-    min-width: 0 !important;
-    max-width: 0 !important;
-}
-
 /* -------------------------------- Scroll Bar ------------------------------------ */
 
 ::-webkit-scrollbar {
@@ -2239,4 +2225,18 @@ body.dark .Projetos .projetos_container .projects_box .projects_content {
     -o-border-radius: 7px;
 }
 
-/* -------------------------------- Scroll Bar ------------------------------------ */
+
+/* ------------------------------------------ Hidden ------------------------------- */
+
+.hidden, .hidden * {
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+}
