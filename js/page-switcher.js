@@ -24,6 +24,7 @@ for (let i = 0; i < totalNavList; i++) {
         }
         for (let j = 0; j < totalNavList; j++) {
             if (navList[j].querySelector("a").classList.contains("active")) {
+                console.log(j);
                 addBackSection(j);    
             }
             navList[j].querySelector("a").classList.remove("active");    
