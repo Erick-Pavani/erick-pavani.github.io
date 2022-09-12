@@ -10,9 +10,6 @@ window.onload = function() {
         document.getElementById("loading").style.opacity = "0";
         document.getElementById("loading").style.height = "0";
         document.getElementById("loading").style.width = "0";
-    }, 5);
-    // document.getElementById("loading").style.display = "none";
-    setTimeout(() => {
         history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
     }, 5);
 };
