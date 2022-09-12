@@ -12,8 +12,10 @@ if (window.innerWidth <= 500 ) {
     totalNavList = navList.length;
 }
 
-let allSections = document.querySelectorAll(".section"),
+const allSections = document.querySelectorAll(".section"),
     totalSections = allSections.length;
+    
+console.log(allSections);
 
 for (let i = 0; i < totalNavList; i++) {
     removeBackSection();
