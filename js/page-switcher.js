@@ -12,7 +12,7 @@ if (window.innerWidth <= 500 ) {
     totalNavList = navList.length;
 }
 
-const allSections = document.querySelectorAll(".section"),
+let allSections = document.querySelectorAll(".section"),
     totalSections = allSections.length;
 
 for (let i = 0; i < totalNavList; i++) {
