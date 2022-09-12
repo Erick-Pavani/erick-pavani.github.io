@@ -1,13 +1,15 @@
+let nav, navList, lis, totalNavList;
+
 if (window.innerWidth <= 500 ) {
-    var nav = document.querySelector(".mobileMenu"),
+    nav = document.querySelector(".mobileMenu"),
     navList = Array.prototype.slice.call(document.querySelectorAll(".name")),
     lis = Array.prototype.slice.call(nav.querySelectorAll("li"));
     navList.push.apply(navList, lis);
-    var totalNavList = navList.length;
+    totalNavList = navList.length;
 } else {
-    var nav = document.querySelector(".nav"),
-        navList = nav.querySelectorAll("li"),
-        totalNavList = navList.length;
+    nav = document.querySelector(".nav"),
+    navList = nav.querySelectorAll("li"),
+    totalNavList = navList.length;
 }
 
 const allSections = document.querySelectorAll(".section"),
