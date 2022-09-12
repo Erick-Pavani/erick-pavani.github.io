@@ -1,3 +1,5 @@
+// Loading - typing animation
+
 var loadingAnimation = new Typed(".loading", {
     strings: ["Carregando..."],
     typeSpeed: 100,
@@ -42,6 +44,6 @@ var typed = new Typed(".typing", {
     loop: true
 });
 
-window.addEventListener("resize", function () {
-    location.reload(true);
-});
+// window.addEventListener("resize", function () {
+//     location.reload(true);
+// });
