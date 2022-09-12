@@ -7,10 +7,8 @@ var loadingAnimation = new Typed(".loading", {
 
 window.onload = function() { 
     setTimeout(() => {
-        document.getElementById("loading").style.opacity = "0";
-        document.getElementById("loading").style.height = "0";
-        document.getElementById("loading").style.width = "0";
-        history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+        document.getElementById("loading").style.display = "none";
+        // history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
     }, 5);
 };
 
@@ -44,6 +42,6 @@ var typed = new Typed(".typing", {
     loop: true
 });
 
-window.addEventListener("resize", function () {
-    location.reload();
-});
+// window.addEventListener("resize", function () {
+//     location.reload();
+// });
