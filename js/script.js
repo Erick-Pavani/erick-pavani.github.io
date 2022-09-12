@@ -8,7 +8,7 @@ var loadingAnimation = new Typed(".loading", {
 window.onload = function() { 
     setTimeout(() => {
         document.getElementById("loading").style.display = "none";
-        // history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+        history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
     }, 5);
 };
 
@@ -42,6 +42,6 @@ var typed = new Typed(".typing", {
     loop: true
 });
 
-// window.addEventListener("resize", function () {
-//     location.reload();
-// });
+window.addEventListener("resize", function () {
+    location.reload(true);
+});
