@@ -1,9 +1,21 @@
+var loadingAnimation = new Typed(".loading", {
+    strings: ["Carregando..."],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+});
+
 window.onload = function() { 
-    document.getElementById("loading").style.display = "none";
+    setTimeout(() => {
+        document.getElementById("loading").style.opacity = "0";
+        document.getElementById("loading").style.height = "0";
+        document.getElementById("loading").style.width = "0";
+    }, 5);
+    // document.getElementById("loading").style.display = "none";
     setTimeout(() => {
         history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
     }, 5);
-}
+};
 
 const mobile = document.getElementById('menu');
 
@@ -11,7 +23,7 @@ function setMenu(e) {
     e.classList.toggle('on');
     menu = document.getElementsByClassName('mobileMenu');
     menu[0].classList.toggle('appear');
-}
+};
 
 document.addEventListener('click', function(event) {
     if (mobile.classList.contains('on') && !mobile.contains(event.target)) {
@@ -33,8 +45,8 @@ var typed = new Typed(".typing", {
     typeSpeed: 100,
     backSpeed: 50,
     loop: true
-})
+});
 
 window.addEventListener("resize", function () {
     location.reload();
-}) 
+});

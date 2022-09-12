@@ -39,11 +39,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 #loading h1 {
-    color: #2196f3;
+    color: transparent !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: linear-gradient(45deg, #fd004c 0%, #fe9000 30%, #fff020 35%, #3edf4b 40%, #3363ff 55%, #b102b7 75%);
     font-size: 50px;
+}
+
+@media (max-width: 400px) {
+    #loading h1 {
+        font-size: 35px;
+    }
 }
 
 header {
@@ -141,7 +156,7 @@ header .nav ul li a.active div {
     -webkit-text-fill-color: var(--secondary-color);
 }
 
-.nav ul li:hover {
+header .nav ul li:hover {
     scale: 1.25;
 }
 
