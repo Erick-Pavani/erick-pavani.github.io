@@ -2173,10 +2173,6 @@ body.dark .Projetos .projetos_container .projects_box .projects_content {
     .Projetos h1 {
         font-size: 42px;
     }
-
-    /* .Projetos .projetos_container .projects_box .projects_content a {
-        pointer-events: none;
-    } */
 }
 
 @media (max-width: 370px) {
