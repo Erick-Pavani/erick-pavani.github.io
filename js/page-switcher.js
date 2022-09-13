@@ -1,4 +1,4 @@
-let nav, navList, lis, totalNavList;
+var nav, navList, lis, totalNavList, activeLink;
 
 if (window.innerWidth <= 500 ) {
     nav = document.querySelector(".mobileMenu"),
@@ -11,29 +11,28 @@ if (window.innerWidth <= 500 ) {
     navList = nav.querySelectorAll("li"),
     totalNavList = navList.length;
 }
+activeLink = navList[0].querySelector("a");
 
 const allSections = document.querySelectorAll(".section"),
     totalSections = allSections.length;
 
-console.log("allSections: ", allSections);
-console.log("totalSections: ", totalSections);
-
+removeBackSection();
 for (let i = 0; i < totalNavList; i++) {
-    removeBackSection();
     const a = navList[i].querySelector("a");
-    a.addEventListener("click", function () {
-        for (let i = 0; i < totalSections; i++) {
-            allSections[i].classList.remove("back-section");
+    a.addEventListener("click", defaultEventListener)
+}
+
+function defaultEventListener() {
+    removeBackSection();
+    for (let j = 0; j < totalNavList; j++) {
+        if (navList[j].querySelector("a").classList.contains("active")) {
+            addBackSection(j);    
         }
-        for (let j = 0; j < totalNavList; j++) {
-            if (navList[j].querySelector("a").classList.contains("active")) {
-                addBackSection(j);    
-            }
-            navList[j].querySelector("a").classList.remove("active");    
-        }
-        this.classList.add("active")
-        showSection(this);
-    })
+        navList[j].querySelector("a").classList.remove("active");    
+    }
+    this.classList.add("active");
+    activeLink = this;
+    showSection(this);
 }
 
 function addBackSection(num) {
@@ -96,4 +95,51 @@ document.querySelector(".contact-me").addEventListener("click", function () {
     addBackSection(sectionIndex);
 });
 
+window.addEventListener("resize", function () {
+    removeBackSection();
+    for (let i = 0; i < totalNavList; i++) {
+        if (navList[i].querySelector("a") === activeLink) {
+            activeLink = i;
+            break;
+        }
+    }
+    navList.forEach(navItem => {
+        navItem.querySelector("a").classList.remove("active"); 
+    });
+    if (window.innerWidth <= 500 ) {
+        nav = document.querySelector(".mobileMenu"),
+        navList = Array.prototype.slice.call(document.querySelectorAll(".name")),
+        lis = Array.prototype.slice.call(nav.querySelectorAll("li"));
+        navList.push.apply(navList, lis);
+    } else {
+        nav = document.querySelector(".nav"),
+        navList = nav.querySelectorAll("li");
+    }
+    totalNavList = navList.length;
+    navList.forEach(navItem => {
+        navItem.querySelector("a").classList.remove("active"); 
+    });
+    for (let i = 0; i < totalNavList; i++) {
+        const a = navList[i].querySelector("a");
+        if (i === activeLink) {
+            a.classList.add("active");
+        }
+        a.removeEventListener("click", defaultEventListener);
+        a.removeEventListener("click", resizeEventListener);
+        a.addEventListener("click", resizeEventListener);
+    }
+});
 
+function resizeEventListener() {
+    removeBackSection();
+    for (let j = 0; j < totalNavList; j++) {
+        if (navList[j].querySelector("a").classList.contains("active")) {
+            addBackSection(j);
+            navList[j].querySelector("a").classList.remove("active");
+            break;    
+        }
+    }
+    this.classList.add("active");
+    activeLink = this;
+    showSection(this);
+}

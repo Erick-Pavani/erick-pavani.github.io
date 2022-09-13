@@ -44,6 +44,3 @@ var typed = new Typed(".typing", {
     loop: true
 });
 
-// window.addEventListener("resize", function () {
-//     location.reload(true);
-// });
